@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>RaidRoulette</RootNamespace>
+    <AssemblyName>RaidRoulette</AssemblyName>
+    <Product>Raid Roulette</Product>
+    <Title>Raid Roulette</Title>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <Version>2.0.0-preview.31</Version>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <OutputPath>bin\$(Configuration)\$(ProjectName)\$(AssemblyName)\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Authors>killdg</Authors>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(SPTBinaries)' == ''">
+    <PackageReference Include="HarmonyX" Version="2.16.1" />
+    <ProjectReference Include="$(SPTSource)/Libraries/SPTushonka.Common/SPTushonka.Common.csproj" />
+    <ProjectReference Include="$(SPTSource)/Libraries/SPTushonka.DI/SPTushonka.DI.csproj" />
+    <ProjectReference Include="$(SPTSource)/Libraries/SPTushonka.Server.Core/SPTushonka.Server.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(SPTBinaries)' != ''">
+    <Reference Include="SPTarkov.Common">
+      <HintPath>$(SPTBinaries)/SPTarkov.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SPTarkov.DI">
+      <HintPath>$(SPTBinaries)/SPTarkov.DI.dll</HintPath>
+    </Reference>
+    <Reference Include="SPTarkov.Server.Core">
+      <HintPath>$(SPTBinaries)/SPTarkov.Server.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(SPTBinaries)/0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="SemanticVersioning">
+      <HintPath>$(SPTBinaries)/SemanticVersioning.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="config.example.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="config.example.jsonc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/TrailItems.cs" Link="Shared/TrailItems.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="../Shared/CloneTagIdentity.cs" Link="Shared/CloneTagIdentity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/RaidChances.cs" Link="Shared/RaidChances.cs" />
+  </ItemGroup>
+</Project>

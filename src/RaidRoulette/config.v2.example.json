@@ -1,0 +1,203 @@
+{
+  "Enabled": true,
+  "EventChance": 35,
+  "Logging": {
+    "Level": "Minimal"
+  },
+  "Debug": {
+    "ForceEvent": ""
+  },
+  "Weights": {
+    "NormalRaid": 50,
+    "LootSurge": 25,
+    "BossHunt": 25,
+    "BossConvention": 25,
+    "HighValueLoot": 20,
+    "RaiderAssault": 15,
+    "CultistInvasion": 15
+  },
+  "LootSurgeMultiplier": 2.0,
+  "HighValueLootMultiplier": 3.0,
+  "CultistGroups": 2,
+  "RaiderGroups": 4,
+  "BossConvention": {
+    "Enabled": true,
+    "Factory": {
+      "BossCount": 3,
+      "RandomSelection": true
+    },
+    "OtherMaps": {
+      "SpawnAllEnabledBosses": true,
+      "BossCount": 6,
+      "RandomSelection": true
+    },
+    "GlobalSettings": {
+      "SpawnChance": 100,
+      "IncludeGuards": true,
+      "BossDifficulty": "hard",
+      "GuardDifficulty": "hard",
+      "SpreadAcrossZones": true
+    },
+    "Bosses": {
+      "Reshala": {
+        "Enabled": true,
+        "UseGlobalSpawnChance": true,
+        "SpawnChance": 100,
+        "UseGlobalGuardSetting": true,
+        "IncludeGuards": true
+      },
+      "Shturman": {
+        "Enabled": true,
+        "UseGlobalSpawnChance": true,
+        "SpawnChance": 100,
+        "UseGlobalGuardSetting": true,
+        "IncludeGuards": true
+      },
+      "Glukhar": {
+        "Enabled": true,
+        "UseGlobalSpawnChance": true,
+        "SpawnChance": 100,
+        "UseGlobalGuardSetting": true,
+        "IncludeGuards": true
+      },
+      "Killa": {
+        "Enabled": true,
+        "UseGlobalSpawnChance": true,
+        "SpawnChance": 100,
+        "UseGlobalGuardSetting": true,
+        "IncludeGuards": true
+      },
+      "Sanitar": {
+        "Enabled": true,
+        "UseGlobalSpawnChance": true,
+        "SpawnChance": 100,
+        "UseGlobalGuardSetting": true,
+        "IncludeGuards": true
+      },
+      "Tagilla": {
+        "Enabled": true,
+        "UseGlobalSpawnChance": true,
+        "SpawnChance": 100,
+        "UseGlobalGuardSetting": true,
+        "IncludeGuards": true
+      },
+      "Zryachiy": {
+        "Enabled": true,
+        "UseGlobalSpawnChance": true,
+        "SpawnChance": 100,
+        "UseGlobalGuardSetting": true,
+        "IncludeGuards": true
+      },
+      "Kaban": {
+        "Enabled": true,
+        "UseGlobalSpawnChance": true,
+        "SpawnChance": 100,
+        "UseGlobalGuardSetting": true,
+        "IncludeGuards": true
+      },
+      "Kollontay": {
+        "Enabled": true,
+        "UseGlobalSpawnChance": true,
+        "SpawnChance": 100,
+        "UseGlobalGuardSetting": true,
+        "IncludeGuards": true
+      },
+      "Partisan": {
+        "Enabled": true,
+        "UseGlobalSpawnChance": true,
+        "SpawnChance": 100,
+        "UseGlobalGuardSetting": true,
+        "IncludeGuards": true
+      },
+      "Goons": {
+        "Enabled": true,
+        "UseGlobalSpawnChance": true,
+        "SpawnChance": 100,
+        "UseGlobalGuardSetting": true,
+        "IncludeGuards": true
+      }
+    }
+  },
+  "V2": {
+    "MaxAliveBots": 60,
+    "MaxScheduledBots": 180,
+    "ConcentratedScavs": 20,
+    "PmcSweepMultiplier": 1.5,
+    "PopulationMultiplier": 3,
+    "SniperMultiplier": 5,
+    "ExplosiveScavChancePercent": 50,
+    "MinimumMagazineCapacity": 100,
+    "GearedBodyArmorClass": 6,
+    "GearedWeaponNameTokens": [
+      "m4a1",
+      "hk416",
+      "spear",
+      "sr25",
+      "rsass",
+      "mdr"
+    ],
+    "MatrixClothingMode": "faction",
+    "Events": {
+      "scav_concentrate": {
+        "Enabled": true,
+        "Weight": 15
+      },
+      "pmc_sweep": {
+        "Enabled": true,
+        "Weight": 15
+      },
+      "explosive_scav_units": {
+        "Enabled": false,
+        "Weight": 15
+      },
+      "outbreak": {
+        "Enabled": false,
+        "Weight": 15
+      },
+      "geared": {
+        "Enabled": false,
+        "Weight": 15
+      },
+      "get_handy": {
+        "Enabled": true,
+        "Weight": 15
+      },
+      "i_have_a_shot": {
+        "Enabled": true,
+        "Weight": 15
+      },
+      "marksman": {
+        "Enabled": true,
+        "Weight": 15
+      },
+      "extreme_overwatch": {
+        "Enabled": true,
+        "Weight": 15
+      },
+      "overloaded": {
+        "Enabled": false,
+        "Weight": 15
+      },
+      "matrix_glitch": {
+        "Enabled": true,
+        "Weight": 15
+      },
+      "no_safe_space": {
+        "Enabled": true,
+        "Weight": 15
+      },
+      "posers_everywhere": {
+        "Enabled": true,
+        "Weight": 15
+      },
+      "fake_cult": {
+        "Enabled": true,
+        "Weight": 15
+      },
+      "lab_work_day": {
+        "Enabled": true,
+        "Weight": 0
+      }
+    }
+  }
+}

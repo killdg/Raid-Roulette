@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><TargetFramework>net8.0</TargetFramework><OutputType>Exe</OutputType><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup><ItemGroup><Reference Include="BepInEx"><HintPath>$(SPTPath)/BepInEx/core/BepInEx.dll</HintPath></Reference><Compile Include="../Client/MenuAction.cs" /><Compile Include="../Client/SpawnTrace.cs" /><Compile Include="../Client/CultistGatePolicy.cs" /><Compile Include="../Client/ReinforcementClock.cs" /><Compile Include="../Client/RosterView.cs" /><Compile Include="../Client/RosterSettings.cs" /><Compile Include="../Client/GiftActivationPolicy.cs" /><Compile Include="../Client/GiftRoamPolicy.cs" /><Compile Include="../Client/StartupFillPolicy.cs" /><Compile Include="../Client/OverwatchPolicy.cs" /><Compile Include="../Client/TimeWarpPolicy.cs" /><Compile Include="../Client/StormtidePolicy.cs" /><Compile Include="../Client/ThunderSound.cs" /><Compile Include="../Client/WavePcm.cs" /><Compile Include="../Client/GunGameSpawnPolicy.cs" /><Compile Include="../Client/GunGameFlowPolicy.cs" /><Compile Include="../Client/StillnessScare.cs" /><Compile Include="../Client/SchizophreniaClockPolicy.cs" /><Compile Include="../Client/RaidEventNotice.cs" /><Compile Include="../Client/MonitorLayout.cs" /></ItemGroup><ItemGroup><Compile Include="../Shared/TrailItems.cs" Link="Shared/TrailItems.cs" /></ItemGroup><ItemGroup><Compile Include="../Client/LabStaffPolicy.cs" /></ItemGroup><ItemGroup><Compile Include="../Shared/RaidChances.cs" Link="Shared/RaidChances.cs" /></ItemGroup><ItemGroup><Compile Include="../Client/ConfigurationImport.cs" /></ItemGroup></Project>
+
+
+
+
+
+
+
+
