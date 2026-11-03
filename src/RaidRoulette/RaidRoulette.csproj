@@ -8,7 +8,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <OutputType>Library</OutputType>
-    <Version>2.0.0-preview.31</Version>
+    <Version>2.0.0-preview.68</Version>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <OutputPath>bin\$(Configuration)\$(ProjectName)\$(AssemblyName)\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -54,12 +54,20 @@
   <ItemGroup>
     <Compile Include="../Shared/TrailItems.cs" Link="Shared/TrailItems.cs" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup />
   <ItemGroup>
     <Compile Include="../Shared/CloneTagIdentity.cs" Link="Shared/CloneTagIdentity.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="../Shared/RaidChances.cs" Link="Shared/RaidChances.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/GuardedPolicy.cs" Link="Shared/GuardedPolicy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/GauntletPolicy.cs" Link="Shared/GauntletPolicy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/DoorTeleportPolicy.cs" Link="Shared/DoorTeleportPolicy.cs" />
+    <EmbeddedResource Include="Quests/FenceBriefings.json" LogicalName="RaidRoulette.FenceBriefings.json" />
   </ItemGroup>
 </Project>

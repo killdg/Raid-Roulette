@@ -1,45 +1,37 @@
-namespace RaidRoulette.Models;
-
-public abstract class RaidEvent : IRaidEvent
+namespace RaidRoulette.Models
 {
-    protected RaidEvent(
-        string id,
-        string name,
-        string description,
-        int weight,
-        bool enabled = true)
+    public abstract class RaidEvent : IRaidEvent
     {
-        Id = id;
-        Name = name;
-        Description = description;
-        Weight = weight;
-        Enabled = enabled;
-    }
+        protected RaidEvent(string id, string name, string description, int weight, bool enabled = true)
+        {
+            Id = id;
+            Name = name;
+            Description = description;
+            Weight = weight;
+            Enabled = enabled;
+        }
 
-    public string Id { get; }
+        public string Id { get; }
+        public string Name { get; }
+        public string Description { get; }
+        public int Weight { get; }
+        public bool Enabled { get; set; }
 
-    public string Name { get; }
+        public virtual void Initialize(RaidContext context)
+        {
+        }
 
-    public string Description { get; }
+        public virtual void Apply(RaidContext context)
+        {
+            context.Report.MarkApplied();
+        }
 
-    public int Weight { get; }
+        public virtual void Verify(RaidContext context)
+        {
+        }
 
-    public bool Enabled { get; set; }
-
-    public virtual void Initialize(RaidContext context)
-    {
-    }
-
-    public virtual void Apply(RaidContext context)
-    {
-        context.Report.MarkApplied();
-    }
-
-    public virtual void Verify(RaidContext context)
-    {
-    }
-
-    public virtual void Cleanup(RaidContext context)
-    {
+        public virtual void Cleanup(RaidContext context)
+        {
+        }
     }
 }

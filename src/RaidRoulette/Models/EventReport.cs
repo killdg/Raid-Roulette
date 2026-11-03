@@ -1,70 +1,64 @@
-namespace RaidRoulette.Models;
-
-public sealed class EventReport
+namespace RaidRoulette.Models
 {
-    private readonly List<string> details = [];
-    private readonly List<string> verification = [];
-
-    public EventReport(string eventId, string eventName, string locationId)
+    public sealed class EventReport
     {
-        EventId = eventId;
-        EventName = eventName;
-        LocationId = locationId;
-    }
-
-    public string EventId { get; }
-
-    public string EventName { get; }
-
-    public string LocationId { get; }
-
-    public EventReportStatus Status { get; private set; } = EventReportStatus.Pending;
-
-    public string? StatusMessage { get; private set; }
-
-    public IReadOnlyList<string> Details => details;
-
-    public IReadOnlyList<string> Verification => verification;
-
-    public void AddDetail(string message)
-    {
-        if (!string.IsNullOrWhiteSpace(message))
+        private readonly List<string> details = [];
+        private readonly List<string> verification = [];
+        public EventReport(string eventId, string eventName, string locationId)
         {
-            details.Add(message);
+            EventId = eventId;
+            EventName = eventName;
+            LocationId = locationId;
+        }
+
+        public string EventId { get; }
+        public string EventName { get; }
+        public string LocationId { get; }
+        public EventReportStatus Status { get; private set; } = EventReportStatus.Pending;
+        public string? StatusMessage { get; private set; }
+        public IReadOnlyList<string> Details => details;
+        public IReadOnlyList<string> Verification => verification;
+
+        public void AddDetail(string message)
+        {
+            if (!string.IsNullOrWhiteSpace(message))
+            {
+                details.Add(message);
+            }
+        }
+
+        public void AddVerification(string message)
+        {
+            if (!string.IsNullOrWhiteSpace(message))
+            {
+                verification.Add(message);
+            }
+        }
+
+        public void MarkApplied(string? message = null)
+        {
+            Status = EventReportStatus.Applied;
+            StatusMessage = message;
+        }
+
+        public void MarkSkipped(string message)
+        {
+            Status = EventReportStatus.Skipped;
+            StatusMessage = message;
+        }
+
+        public void MarkFailed(string message)
+        {
+            Status = EventReportStatus.Failed;
+            StatusMessage = message;
         }
     }
 
-    public void AddVerification(string message)
+    public enum EventReportStatus
     {
-        if (!string.IsNullOrWhiteSpace(message))
-        {
-            verification.Add(message);
-        }
+        Pending,
+        Applied,
+        Skipped,
+        Failed
     }
-
-    public void MarkApplied(string? message = null)
-    {
-        Status = EventReportStatus.Applied;
-        StatusMessage = message;
-    }
-
-    public void MarkSkipped(string message)
-    {
-        Status = EventReportStatus.Skipped;
-        StatusMessage = message;
-    }
-
-    public void MarkFailed(string message)
-    {
-        Status = EventReportStatus.Failed;
-        StatusMessage = message;
-    }
-}
-
-public enum EventReportStatus
-{
-    Pending,
-    Applied,
-    Skipped,
-    Failed
 }

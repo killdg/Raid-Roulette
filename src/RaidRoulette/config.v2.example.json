@@ -170,10 +170,6 @@
         "Enabled": true,
         "Weight": 15
       },
-      "extreme_overwatch": {
-        "Enabled": true,
-        "Weight": 15
-      },
       "overloaded": {
         "Enabled": false,
         "Weight": 15
@@ -195,6 +191,10 @@
         "Weight": 15
       },
       "lab_work_day": {
+        "Enabled": true,
+        "Weight": 0
+      },
+      "guarded": {
         "Enabled": true,
         "Weight": 0
       }

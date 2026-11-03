@@ -170,10 +170,6 @@
         "Enabled": true,
         "Weight": 15
       },
-      "extreme_overwatch": {
-        "Enabled": true,
-        "Weight": 15
-      },
       "overloaded": {
         "Enabled": false,
         "Weight": 15
@@ -231,6 +227,10 @@
         "Weight": 0
       },
       "grenadier": {
+        "Enabled": true,
+        "Weight": 0
+      },
+      "guarded": {
         "Enabled": true,
         "Weight": 0
       }

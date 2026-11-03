@@ -1,75 +1,89 @@
 # Raid Roulette
 
-**Created by killdg. Developed with assistance from ChatGPT.**
+![Raid Roulette — over 40 event types](assets/raid-roulette-cover.png)
 
-A raid modifier mod for SPT. Choose a one-shot event for the next raid or customize automatic event percentages. This repository contains the event engine; trader quests are published separately as [Raid Roulette Task Edition](https://github.com/killdg/Raid-Roulette-Task-Edition).
+**Created by killdg, with assistance from ChatGPT.**
 
-Current snapshot: **backend 2.0.0-preview.31**, **client 2.0.39**. Built against **SPT 4.1.6 / Escape from Tarkov 0.16.9.5.40743**. 
+Keep your usual raids—or let something unexpected take over. Raid Roulette adds themed opposition, unusual loot, weather, hallucinations and wave challenges to **SPT 4.1.6**.
 
-## Choose your install
+> **Release preparation is in progress.** Current solo candidate: client **2.0.144**, server **2.0.0-preview.68**. Some events have player-confirmed tests; others still need final checks. This repository is a development snapshot, not a claim that every event is release-ready. See [testing status](docs/VALIDATION.md).
 
-| Mod | Purpose | Requires |
-|---|---|---|
-| **Raid Roulette** | Random raid events, event effects, testing controls and raid notices. No trader quests. | Compatible SPT |
-| **[Raid Roulette Task Edition](https://github.com/killdg/Raid-Roulette-Task-Edition)** | Trader stories, objectives, rewards and quest-driven event selection. | Raid Roulette backend preview.31 and client 2.0.39 |
+## Two ways to play
 
-Install Raid Roulette alone for variety in ordinary raids. Add Task Edition for the campaign. By default, Task Edition requests a current quest's event only on a suitable map; raids with no applicable quest stay Normal. Set `RandomEventsBetweenQuests` to `true` in Task Edition's `config.json` to keep random events between quest raids. A queued one-shot raid choice takes precedence.
+### Let events happen naturally
 
-Existing users of the combined build should install **both** parts to retain their tasks. Quest IDs, definitions and progress formats are unchanged; migration still needs live verification. The event-only build does not register quests.
+Press **F1**, expand **Raid Roulette**, and keep **Enable Raid Roulette** on. With **Trader Event Activation off**, choose a raid preset:
 
-## F12 controls
+| Preset | Normal raids | Event raids |
+| --- | --- | --- |
+| Mostly Normal (default) | 90% | 10% |
+| Half And Half | 50% | 50% |
+| Custom | Your chosen normal share | Your enabled event weights |
 
-Choose a raid type and press **Queue next raid** to use it once, then return to automatic selection. Queues last for the current server session. An unsupported manual choice produces Normal for that raid.
+Custom separates **how often anything unusual happens** from **which events you enjoy**. Set the normal-raid chance, enable the event types you want, and give those events relative weights. Equal weights make enabled events equally likely; a larger weight makes an event more frequent within the event share. Set an event's weight to zero or disable it to leave it out. You do **not** need to make dozens of values add up to 100.
 
-- **OverallChance:** set the overall event rate, for example 40% events and 60% Normal. Nonzero event entries share the event pool; zero excludes a type.
-- **IndividualPercentages:** use exact allocations, for example Normal 10%, Clone Wars 10%, Stormtide 80%, everything else 0%. Totals above 100% are rejected; unused percentage becomes Normal.
-- Unsupported map or asset shares become **Normal** rather than increasing other events. On Labs, the example above becomes Clone Wars 10% and Normal 90%.
-- **Advanced → Show advanced options** defaults off. Enable it for the AI roster, live monitor/Boss Hunt tracking, F8 shortcut, spawn diagnostics and Ghost Review. Those diagnostics stay inactive while Advanced is off.
+For example, Normal 60% leaves 40% for events. Giving Stormtide a weight of 3 and Clone Wars a weight of 1 makes their overall shares 30% and 10%. If Stormtide is unsupported on your selected map, its share becomes Normal: on Labs that example becomes 90% Normal and 10% Clone Wars. Unsupported shares are not redistributed to force another event.
 
-Changes apply to future generated raids. F12 settings are saved by BepInEx and synchronized to the backend; the game's normal raid countdown is unaffected. The backend's JSON selection remains a fallback before client settings are synchronized.
+Changes apply to the next generated raid. Existing saved preferences are preserved when updating.
 
-## What is here
+### Choose the next raid through Fence
 
-- 31 special event definitions plus Normal, with event selection and map eligibility checks.
-- Server-side loot, loadout and spawn changes, paired with local client behavior where needed.
-- Stormtide weather/audio, Time Warp, hallucinations, Gun Game, Boss Hunt, Clone Wars and more.
-- Optional integration with the separate Task Edition campaign; no quests are registered by Raid Roulette itself.
-- Native after-raid notices, F12 next-raid choice and percentage controls; optional diagnostics under Advanced.
-- Tests and compatibility checks, including the latest civilian XP, movement and clothing changes.
+Enable **Trader Event Activation** in F1, then visit **Fence → Tasks**. Accept an **[RR: Event Name]** assignment to choose that event for your next eligible **PMC** raid. Accepting another RR assignment replaces the previous selection; events do not stack.
 
-See [event status](docs/EVENTS.md), [how it works](docs/ARCHITECTURE.md), [build and install](docs/BUILDING.md), [Task Edition quest guide](https://github.com/killdg/Raid-Roulette-Task-Edition/blob/main/docs/QUEST-GUIDE.txt), and [validation limits](docs/VALIDATION.md).
+The deployment map shows a gold **[RR]** badge beside locations that support **your accepted assignment**. Hover over it for the event name. No accepted RR task means no all-events marker clutter. Stormtide excludes Labs and Factory; Lab Work Day is Labs-only. All four season choices exclude Labs and include Factory, although some seasonal differences there are subtle.
 
-## Current testing state
+An unsupported map runs Normal and leaves the selection waiting. Fence activation owns the selection while enabled; switch it off to return to weighted random raids. Ordinary assignments finish after their event raid regardless of survival. Trials require the relevant wave clear. After an attempt, assignments return as fresh, unaccepted offers; startup also clears stale RR selections left by an interrupted session. These are reusable, reward-free event selectors, separate from the story quest pack.
 
-This is a development preview. Player feedback has confirmed several events, but not every event or combination of mods. The latest Labs changes and modular split are compiled and checked; they still need a live raid test. Automated checks do not establish that Unity animations or AI behavior work in a raid.
+**Gun Game [Respawns]** is a separate Fence choice. Defeat resets the ladder and knife bonus; respawning restores health and starts again with a pistol. The raid countdown continues.
 
-The project targets **local solo play**. Fika support and co-op synchronization are not implemented. It does not require another quest, weather or AI mod. It uses the game and SPT-provided BepInEx/Harmony assemblies.
+## What can happen?
 
-## Download
+- **Opposition:** a pursuing boss, a boss gathering, Raiders, Cultists, guards, clones or themed Scav/PMC groups.
+- **Equipment:** pistols, shotguns, sniper rifles, high-capacity magazines, powerful gear, smoke or explosive grenades.
+- **World changes:** Stormtide, Blue Day mortar barrages, Infrastructure Decay, four seasons, Time Warp and Wrong Door.
+- **Challenges:** Gun Game, respawning Gun Game, ten-wave Trials, Guard Trials, Extreme Trials, Snowball Trials and Total Trial.
+- **Stranger encounters:** The Thief, Lab Work Day and Schizophrenia.
 
-Get the installable event-only ZIP from [Releases](https://github.com/killdg/Raid-Roulette/releases). Task Edition is a separate optional download. Close SPT.Server and Tarkov and back up an existing installation before updating.
+Read the [short event guide](docs/Event-Overview.md) or [expand individual event details](docs/Event-Guide.md) before choosing—or discover the surprises yourself. A few **easter eggs** reward curiosity. Their solutions are deliberately left out of the player guide.
 
-## Build
 
-Install .NET SDK 10 and the .NET 8 runtime for the check projects, and use your own compatible SPT installation:
+## Installation
 
-```powershell
-.\Build.ps1 -SptRoot 'C:\SPT'
+Close the game and SPT server. Extract the eventual release ZIP into the **SPT installation root**, merging:
+
+```text
+README.md
+BepInEx/
+SPT_Runtime/
 ```
 
-This creates the event package in `artifacts/INSTALL/` and does not install anything into the game. Game/SPT DLLs and database files are referenced locally and are not distributed here. The three bundled custom rain/thunder recordings are described in [assets/Audio](assets/Audio/README.txt).
+Use matching client/server files from the same package. Do not install source archives as mods. Existing settings and profiles are not part of the installer and must not be replaced.
 
-## Contributing
+**F1** opens SPT's Configuration Manager when that menu provider is installed and its shortcut is unchanged. The menu provider is not created or bundled by Raid Roulette. Configuration is also saved in `BepInEx/config/com.killdg.raidroulette.testing.cfg`.
 
-Bug reports should include the event, map, game/SPT version, steps to reproduce, and relevant redacted log excerpts. Identify other installed mods and whether the test was solo. Please keep profiles, session credentials and complete unredacted logs out of issues.
+The optional **DG Testing Tools** package exposes developer diagnostics. Ordinary players do not need it. The separate **Raid Roulette Tasks** package contains story missions and requires the RR engine; it is not included here.
 
-## License and attribution
+## Compatibility and limits
 
-Project creation and authorship: **killdg**. ChatGPT assisted with development and troubleshooting.
+- Designed and tested against **SPT 4.1.6**, using the game's and SPT's assemblies.
+- The main edition targets **solo play**. A separate Fika Edition is being investigated; no co-op support is claimed for this build.
+- No additional AI, loot, weather or gameplay mod is required. Other mods that alter the same systems may conflict; combinations have not all been tested.
+- AI still depends on native navigation and physics. Recovery relocations in Trials must be concealed at both ends; they are not a new navigation mesh.
+- Blackouts affect supported runtime sources. Baked lighting and some displays may remain visible.
+- Compilation and automated checks do not prove live movement, audio, extraction or quest lifecycle behavior.
 
-Project source is licensed under [MIT](LICENSE). Escape from Tarkov, SPT, Unity, BepInEx, Harmony and third-party assets retain their own ownership and licenses. No game binaries, decompiled game source, profiles or bundled third-party runtime libraries are included.
+## Source, builds and transparency
 
-SPT upstream: https://github.com/SP-Tushonka/build  
-Fika project (future compatibility target): https://github.com/project-fika
+[Build instructions](docs/BUILDING.md) · [Engine overview](docs/ARCHITECTURE.md) · [Data scope](docs/DATA-SCOPE.md) · [Testing status](docs/VALIDATION.md)
 
-Publisher identifiers now use killdg. On first launch, an empty new F12 configuration imports the single existing Raid Roulette preference file, without deleting the original. Quest IDs and profile progress formats are unchanged.
+Source uses conventional readable C#, with comments around unusual engine integration. No obfuscation or minification is used. Game/SPT binaries, decompiled game source, profiles and credentials must not be uploaded. Future download releases must be built from the exact tagged source and carry checksums and build provenance; no final download is being published as part of this preparation.
+
+## Credits
+
+**Raid Roulette is created by killdg, with assistance from ChatGPT.**
+
+**Inspiration:** [Dynamic Raid Events](https://sp-mod.com/mod/2842/dynamic-raid-events) by **[Cobra](https://github.com/CobraSnipper)** inspired this project. Any reused third-party code retains its applicable copyright and license notices.
+
+Original project source is licensed under [MIT](LICENSE). SPT, Unity, BepInEx, Harmony and game assets retain their respective ownership and licenses.
+
+If you enjoy the mod, [you can feed my caffeine addiction](https://ko-fi.com/killdg).

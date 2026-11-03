@@ -1,0 +1,16 @@
+DRAFT ONLY — DO NOT SUBMIT/PUBLISH DURING FINAL TESTING
+Name: Raid Roulette
+GUID: com.killdg.raidroulette
+Category: Overhauls
+License: MIT
+Creator: killdg
+Additional authors: leave blank; inspiration credit belongs in the description.
+Teaser: Weighted random raids, Fence-selected events, unusual opposition, weather and wave challenges. Choose your next surprise!
+Source: https://github.com/killdg/Raid-Roulette
+Description: docs/SP-MOD-DESCRIPTION.md
+Donation: https://ko-fi.com/killdg
+Target: SPT 4.1.6; solo edition. No Fika support claim.
+Release file: not finalized; do not attach an older ZIP or the source archive.
+F1 menu provider: existing Configuration Manager, not bundled by this mod.
+Artwork: assets/raid-roulette-cover.png (user-approved cover); upload copy assets/raid-roulette-thumbnail.jpg.
+Publication date: leave unset until reviewed.

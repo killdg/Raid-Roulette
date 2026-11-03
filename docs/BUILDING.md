@@ -1,24 +1,30 @@
-# Build, install and inspect
+# Build and verify
 
-Use Windows, your own SPT 4.1.6 installation with game 0.16.9.5.40743, .NET SDK 10, and the .NET 8 runtime for the menu/metadata checks. These are development prerequisites; Python and other mods are not runtime dependencies.
+Use a compatible SPT 4.1.6 installation, .NET SDK 10 and the .NET 8 runtime for the menu/client check projects. Referenced game/SPT assemblies stay local and must not be redistributed.
 
 ```powershell
-.\Build.ps1 -SptRoot 'C:\SPT'
-.\Test.ps1 -SptRoot 'C:\SPT' -TaskEditionSource '..\Raid-Roulette-Task-Edition'
+./Build.ps1 -SptRoot 'B:/SPT MOD TESTING'
+./Test.ps1 -SptRoot 'B:/SPT MOD TESTING'
 ```
 
-The scripts accept `-Dotnet` if the SDK is not on PATH. The backend uses `-p:SPTBinaries=<SPT folder>\SPT_Runtime`; the client and compatibility checks use `-p:SPTPath=<SPT folder>`. No proprietary reference DLLs are copied into this repository.
+The build writes `artifacts/INSTALL/README.md`, `BepInEx/` and `SPT_Runtime/`. It copies the client/server pair, example backend config, every bundled audio recording and every current Fence illustration. It does not install into SPT or modify profiles. Preserve existing active config files when merging an eventual release package.
 
-`Build.ps1` creates `artifacts/INSTALL`, containing only the two event mod DLLs, a configuration example and the three bundled recordings under `assets/Audio`. It does not install or modify the live game. Copying locally generated output should never include game reference DLLs.
+For the cross-package compatibility harness, first build the matching separate Tasks checkout and supply its root:
 
-To install a build, close SPT.Server and Tarkov first and back up the existing mod, its configuration and your profile. Merge `artifacts/INSTALL` into your SPT root. On a fresh installation copy the backend's `config.example.json` to `config.json`; preserve an existing configuration when updating. Keep `Audio` beside the client DLL. Both event DLLs are required. Task Edition is built from its separate repository. Install both products to retain the combined build’s tasks. Raid Roulette builds without a Task Edition checkout; full integration checks require its source path and both products built.
+```powershell
+./Test.ps1 -SptRoot 'B:/SPT MOD TESTING' -TaskEditionSource '../Raid-Roulette-Tasks'
+```
 
-F12 exposes normal-player selection controls. Select a type and press Queue next raid for a one-shot override. Otherwise use OverallChance or IndividualPercentages. Unsupported shares become Normal. Advanced diagnostics, the roster and F8 monitor require Show advanced options; it defaults off. Manual choices still obey map/asset eligibility.
+The script runs MenuTests and FenceChecks; the optional Tasks path also runs ClientChecks against native signatures and the built assembly pair. The older `src/Tests` integration harness references the legacy pre-merge Task Edition source layout and is not the current release gate. Do not mistake a skipped historical harness for a live gameplay pass.
 
-Task Edition’s ten quests use stable IDs. Existing accepted tasks/progress are retained, but later quests wait for their predecessors. Follow the [quest guide](QUEST-GUIDE.txt). Avoid removing quest definitions while relying on them in a character's save.
+Run the whitespace check before submission:
 
-`Test.ps1` defaults to skipping the backend Harmony runtime smoke test because the local .NET test host encountered a MonoMod binding limitation; `-IncludeHarmonySmoke` opts into that check. The unchanged native HTTP adapter check is skipped in the documented runner. Audio-specific checks run when all three bundled recordings are present. The retired friend-package fixture is not required by this runner, so its counts differ from the author's full validation snapshot.
+```powershell
+dotnet format whitespace . --folder --include src --verify-no-changes
+```
 
-A build succeeding does not establish compatibility with another game/SPT version. Use a separate test installation for live verification.
+## Release provenance
 
-Task Edition’s `RandomEventsBetweenQuests` setting defaults to false. A missing pack config uses that default; copy its example to `config.json` to customize it. Existing core configuration is preserved. Neither build script modifies profiles or installs into the game.
+Finish live checks, review the final source, commit and tag it, then build the download from that exact tag. Record its commit, SDK/SPT versions and DLL/ZIP SHA-256 hashes. Re-download uploaded assets and verify them before linking a release on the mod page. No obfuscation/minification step is used.
+
+Do not include the optional DG Testing Tools DLL, game assemblies, profiles, private logs or source archives in the player installer. Source archives belong beside the matching binary release, not inside SPT.

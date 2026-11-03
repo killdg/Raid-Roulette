@@ -1,4 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net10.0</TargetFramework>
@@ -45,4 +48,19 @@
   <ItemGroup>
     <Compile Include="$(RaidRouletteTasksSource)/src/QuestPackServer/**/*.cs" Exclude="$(RaidRouletteTasksSource)/src/QuestPackServer/bin/**;$(RaidRouletteTasksSource)/src/QuestPackServer/obj/**;$(RaidRouletteTasksSource)/src/QuestPackServer/QuestPackMod.cs" />
   </ItemGroup>
-<ItemGroup><Compile Include="../Shared/RaidChances.cs" Link="Shared/RaidChances.cs" /></ItemGroup></Project>
+  <ItemGroup>
+    <Compile Include="../Shared/RaidChances.cs" Link="Shared/RaidChances.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="../Client/LockedLootBackpackPolicy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/GuardedPolicy.cs" Link="Shared/GuardedPolicy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/GauntletPolicy.cs" Link="Shared/GauntletPolicy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/DoorTeleportPolicy.cs" Link="Shared/DoorTeleportPolicy.cs" />
+  </ItemGroup>
+</Project>

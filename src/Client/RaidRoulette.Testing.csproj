@@ -4,7 +4,7 @@
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <AssemblyName>RaidRoulette.Testing</AssemblyName>
-    <Version>2.0.39</Version>
+    <Version>2.0.144</Version>
     <Authors>killdg</Authors>
   </PropertyGroup>
   <ItemGroup>
@@ -56,6 +56,10 @@
       <HintPath>$(SPTPath)/EscapeFromTarkov_Data/Managed/UnityEngine.AIModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>$(SPTPath)/EscapeFromTarkov_Data/Managed/UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <Reference Include="UnityEngine.AudioModule">
       <HintPath>$(SPTPath)/EscapeFromTarkov_Data/Managed/UnityEngine.AudioModule.dll</HintPath>
       <Private>false</Private>
@@ -68,7 +72,6 @@
   <ItemGroup>
     <Compile Include="../Shared/TrailItems.cs" Link="Shared/TrailItems.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Compile Include="../Shared/CloneTagIdentity.cs" Link="Shared/CloneTagIdentity.cs" />
   </ItemGroup>
@@ -86,5 +89,46 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="../Shared/RaidChances.cs" Link="Shared/RaidChances.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>$(SPTPath)/EscapeFromTarkov_Data/Managed/UnityEngine.ParticleSystemModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>$(SPTPath)/EscapeFromTarkov_Data/Managed/UnityEngine.AnimationModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/GuardedPolicy.cs" Link="Shared/GuardedPolicy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/GauntletPolicy.cs" Link="Shared/GauntletPolicy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(SPTPath)/EscapeFromTarkov_Data/Managed/UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>$(SPTPath)/EscapeFromTarkov_Data/Managed/UnityEngine.UIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>$(SPTPath)/EscapeFromTarkov_Data/Managed/UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/DoorTeleportPolicy.cs" Link="Shared/DoorTeleportPolicy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(SPTPath)/EscapeFromTarkov_Data/Managed/Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
   </ItemGroup>
 </Project>

@@ -1,15 +1,32 @@
-# Validation snapshot
+# Validation and release status
 
-The full modular preview.31 / client 2.0.39 plus Task Edition backend 1.0.0-preview.4 / client 1.0.2 snapshot passed **830 automated checks** in the author's environment: 508 backend, 156 pure/menu/audio, and 166 client metadata/compatibility checks. All four production assemblies completed with zero warnings and errors.
+Current candidate: client **2.0.144**, backend **2.0.0-preview.68**, SPT **4.1.6**. Tests are confined to a dedicated solo installation. Results below distinguish user observations from automated verification; they are not exhaustive compatibility guarantees.
 
-Those counts included local native database fixtures, the supplied three audio recordings, and an earlier friend-package configuration fixture. Optional inputs omitted from a fresh checkout reduce the count. Validation logs are not published because they can include machine paths; tests and runner scripts are included.
+## Player-confirmed observations
 
-The .NET test-host Harmony runtime smoke check was skipped due to a MonoMod binding limitation. The unchanged native HTTP adapter check was also skipped. Client metadata checks verify expected signatures and compiled wiring against the installed game assemblies; they do not execute Unity gameplay.
+- Gun Game: Factory and Labs runs confirmed weapon progression, rocket damage and respawn in the tested builds. Further population/pressure behavior can vary by map.
+- Geared: the latest Factory test confirmed class-six plates on inspected opponents. Initial population and idle behavior still follow native map scheduling.
+- Outbreak: user reported a successful Factory test.
+- Explosive Scav Units: user reported a successful Ground Zero test.
+- Boss Run Down: three user raids showed improved pursuit after routing repairs.
+- Fence assignment replacement and supplied artwork: user confirmed these displayed and worked.
+- Lab Work Day improved office staff movement, but closed-door handling and later routing changes still need regression tests.
+- Schizophrenia, Stormtide, Smokers Lobby, The Thief, Locked Loot and several equipment events have earlier player confirmations; new changes still need targeted regression checks.
 
-The latest Labs changes still need a live raid test: medical outfits and Security vests, empty-hands animations, fleeing from shots/hits, suppressing native boss/combat credit, and the configurable civilian XP penalty. Also test the three-kill Raider response, result display, level boundaries, death/extraction and repeat raids.
+## Open checks
 
-The quest chain and clone dogtag fixes need live regression checks for hand-ins, reward delivery, accepted-quest migration and persistence. Extreme Overwatch's extra sniper spawning remains unresolved. Other events without explicit player confirmation are marked as needing verification in the [catalog](EVENTS.md).
+- Extreme/Guard/Snowball/Total Trials: complete wave runs, final rewards, timer extension and pursuit across maps.
+- Client 2.0.144: verify stuck hunters do not disappear while visible. It now vetoes native visible contact and requires scenery concealment at both relocation ends, excluding actor colliders as cover. This is compiled/checked, not yet a live pass.
+- Infrastructure Decay: powered button recovery, light-source restoration and day/night chance behavior.
+- Lab Work Day: staff motion, native door interaction and raids with no missing workers.
+- Fence: repeat accepts, end-of-raid reset, interruption/startup reset and accepted-only map markers.
+- Wrong Door: preserve heading/runout; season changes: no residual snow on the next raid.
+- Schizophrenia: audio fallback balance, extract-menu text restoration and late-raid effects.
+- Stormtide: night hurricane chance, roof separation and recorded/gameplay sound balances.
 
-New checks verify the absence of quest code/resources from core assemblies, one-way dependencies, campaign registration and dispatch, quest-only versus mixed selection, and retention of core clone fixes. Quest JSON and shared quest IDs are byte-for-byte unchanged from the installed combined snapshot.
 
-Chance/Advanced checks cover exact 10/10/80 allocations, Labs fallback to 90% Normal, zero exclusions, overall pool shares, invalid totals/non-finite values, retaining prior settings, one-shot consumption/replay protection, and compiled Advanced gates. The revised F12 visibility and queue UI still need a live test.
+## Automated evidence
+
+The 2.0.144 client build completed without warnings/errors, and the 304 retained compatibility checks passed. The updated Fence checks passed 457 assertions. Such checks verify signatures and policies, not live animation, damage, sound or AI behavior.
+
+Detailed local raid logs remain outside the public repository: they can contain session/profile information. Publish only redacted summaries. Fika co-op has not been verified for this solo edition.

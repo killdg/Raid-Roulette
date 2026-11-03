@@ -1,3 +1,5 @@
+> Historical engine notes: some paths and old F12/chance controls below describe earlier builds. Use README.md and BUILDING.md for the current player controls and build commands; inspect the current source for exact behavior.
+
 # How Raid Roulette works
 
 ## Server and client

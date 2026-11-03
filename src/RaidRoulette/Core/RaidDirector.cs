@@ -1,18 +1,18 @@
 using RaidRoulette.Configuration;
 using RaidRoulette.Models;
 
-namespace RaidRoulette.Core;
-
-[Obsolete("Use EventManager instead.")]
-public sealed class RaidDirector
+namespace RaidRoulette.Core
 {
-    public RaidEvent SelectEvent(int eventChance)
+    [Obsolete("Use EventManager instead.")]
+    public sealed class RaidDirector
     {
-        var config = new RaidRouletteConfig
+        public RaidEvent SelectEvent(int eventChance)
         {
-            EventChance = eventChance
-        };
-
-        return new EventManager(config).SelectEvent().Event;
+            var config = new RaidRouletteConfig
+            {
+                EventChance = eventChance
+            };
+            return new EventManager(config).SelectEvent().Event;
+        }
     }
 }

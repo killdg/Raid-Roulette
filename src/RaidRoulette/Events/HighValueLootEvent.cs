@@ -1,27 +1,21 @@
 using RaidRoulette.Models;
 
-namespace RaidRoulette.Events;
-
-public sealed class HighValueLootEvent : RaidEvent
+namespace RaidRoulette.Events
 {
-    public HighValueLootEvent()
-        : base(
-            id: "high_value_loot",
-            name: "High-Value Loot",
-            description: "More high-value loot opportunities are active.",
-            weight: 20)
+    public sealed class HighValueLootEvent : RaidEvent
     {
-    }
+        public HighValueLootEvent() : base(
+            "high_value_loot",
+            "Locked Loot",
+            "One to three premium items in keyed rooms, using the local matching client.",
+            20
+        )
+        {
+        }
 
-    public override void Apply(RaidContext context)
-    {
-        var multiplier = context.Config.HighValueLootMultiplier;
-        context.LootService.ApplyLooseLootMultiplierForRaid(
-            context.LocationId,
-            multiplier,
-            context.RegisterRollback);
-
-        context.Report.AddDetail($"High-value loose-loot multiplier = x{multiplier:0.##}");
-        context.Report.MarkApplied();
+        public override void Apply(RaidContext context)
+        {
+            context.Report.MarkApplied("Local keyed-room detection replaces ordinary loot points with premium items; no global loose-loot multiplier.");
+        }
     }
 }
