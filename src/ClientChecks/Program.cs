@@ -1525,3 +1525,34 @@ using (var extractRepair = ReadAssembly(args[2]))
         "Extract illusion does not write native extraction fields"
     );
 }
+
+using (var patrolAssembly = ReadAssembly(args[2]))
+{
+    var drive = patrolAssembly.MainModule.Types.Single(type => type.Name == "LabStaffBehaviour")
+        .Methods.Single(method => method.Name == "DriveHub");
+    Check(drive.Body.Instructions.Any(instruction => instruction.Operand is MethodReference method
+        && method.DeclaringType.Name == "LabStaffHubs" && method.Name == "TryPatrol"),
+        "Lab staff movement selects cross-office patrol routes");
+    var planner = patrolAssembly.MainModule.Types.Single(type => type.Name == "LabStaffHubs")
+        .Methods.Single(method => method.Name == "TryPatrol");
+    Check(planner.Body.Instructions.Any(instruction => instruction.Operand is MethodReference method
+        && method.Name == "CalculatePath")
+        && planner.Body.Instructions.Any(instruction => instruction.Operand is MethodReference method
+            && method.Name == "HasUnlockedExit"),
+        "Cross-office patrol validates native navigation and locked door exits");
+}
+
+using (var staffLife = ReadAssembly(args[2]))
+{
+    var staff = staffLife.MainModule.Types.Single(type => type.Name == "LabStaffBehaviour");
+    var chatter = staff.Methods.Single(method => method.Name == "Converse");
+    Check(chatter.Body.Instructions.Any(instruction => instruction.Operand is MethodReference method
+        && method.DeclaringType.FullName == "EFT.Player" && method.Name == "Say"),
+        "Staff proximity chatter uses native player speech");
+    var patrol = staff.Methods.Single(method => method.Name == "DriveHub");
+    Check(patrol.Body.Instructions.Any(instruction => instruction.Operand is MethodReference method
+        && method.Name == "MovementPause")
+        && !patrol.Body.Instructions.Any(instruction => instruction.Operand is MethodReference method
+            && method.Name == "Teleport"),
+        "Staff rests pause native movement without teleporting");
+}

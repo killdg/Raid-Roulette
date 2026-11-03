@@ -61,7 +61,7 @@
 
 **Grenadier** — Scavs and PMCs carry plentiful explosive grenades and use them often. Keep your escape route clear.
 
-**Lab Work Day** — Unarmed staff hurry through Labs while fighters battle around them. Keyed rooms are open and power can fail. Killing staff costs raid experience; three staff deaths call in hostile Raiders.
+**Lab Work Day** — Unarmed staff travel between Labs office hubs, with varied walking/running, short rests and occasional nearby-worker chatter while fighters battle around them. Keyed rooms are open and power can fail. Killing staff costs raid experience; three staff deaths call in hostile Raiders.
 
 **Blue Day** — An early air-raid siren warns of incoming mortar bombardments. Strikes return at unpredictable intervals. Find overhead cover when the shells start falling.
 

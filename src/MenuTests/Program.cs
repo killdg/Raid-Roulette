@@ -72,7 +72,7 @@ try
         "Configuration Manager can discover CustomDrawer field"
     );
     Check(
-        typeof(ConfigurationManagerAttributes).GetField("ReadOnly")?.FieldType == typeof(bool? ),
+        typeof(ConfigurationManagerAttributes).GetField("ReadOnly")?.FieldType == typeof(bool?),
         "ReadOnly metadata uses nullable field"
     );
     var custom = MenuAction.Bind(config, "menu", "custom", "test", () =>
@@ -1197,3 +1197,8 @@ Check(
     RaidChoiceNames.EventId("Snowball_Trials") == "snowball",
     "Snowball Trials display rename preserves the saved backend ID"
 );
+
+Check(!LabStaffPolicy.PatrolDistance(16f), "Staff patrol leaves the old local office radius");
+Check(LabStaffPolicy.PatrolDistance(24f), "Staff patrol accepts cross-hub distances");
+Check(!LabStaffPolicy.PatrolDistance(float.NaN) && !LabStaffPolicy.PatrolDistance(float.PositiveInfinity),
+    "Staff patrol rejects invalid distances");

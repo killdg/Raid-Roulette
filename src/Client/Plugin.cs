@@ -63,7 +63,7 @@ namespace RaidRoulette.TestingClient
     }
 
     [BepInDependency(DeveloperSettings.PluginId, BepInDependency.DependencyFlags.SoftDependency)]
-    [BepInPlugin("com.killdg.raidroulette.testing", "Raid Roulette", "2.0.144")]
+    [BepInPlugin("com.killdg.raidroulette.testing", "Raid Roulette", "2.0.146")]
     public sealed class Plugin : BaseUnityPlugin
     {
         private static Plugin? instance;

@@ -14,7 +14,14 @@ namespace RaidRoulette.TestingClient
     {
         private sealed class State
         {
+            internal BotOwner Owner = null!;
+            internal bool Run;
+            internal float RestUntil;
+            internal float NextMidPause;
+            internal float NextSpeech;
             internal int HubIndex;
+            internal int PatrolCursor;
+            internal float NextDiagnostic;
             internal bool HandsReady;
             internal bool Changing;
             internal bool Submitting;
@@ -30,10 +37,12 @@ namespace RaidRoulette.TestingClient
 
         private static readonly Dictionary<string, State> actors = new();
         private static readonly Queue<(Vector3 Position, float At)> threats = new();
+        private static float nextConversation;
         private static Vector3[] anchors = Array.Empty<Vector3>();
         internal static void Reset()
         {
             actors.Clear();
+            nextConversation = 0;
             LabStaffHubs.Reset();
             threats.Clear();
             anchors = Array.Empty<Vector3>();
@@ -75,7 +84,13 @@ namespace RaidRoulette.TestingClient
             {
                 actors[bot.ProfileId] = state = new State
                 {
+                    Owner = bot,
+                    Run = UnityEngine.Random.value < .55f,
+                    RestUntil = Time.unscaledTime + UnityEngine.Random.Range(1f, 7f),
+                    NextMidPause = Time.unscaledTime + UnityEngine.Random.Range(25f, 50f),
+                    NextSpeech = Time.unscaledTime + UnityEngine.Random.Range(15f, 35f),
                     HubIndex = actors.Count,
+                    PatrolCursor = actors.Count,
                     NextPath = Time.unscaledTime + UnityEngine.Random.Range(0, .8f),
                     LastMoved = Time.unscaledTime,
                     LastPosition = bot.Position
@@ -148,7 +163,7 @@ namespace RaidRoulette.TestingClient
         {
             var owner = mover._owner;
             return owner?.HealthController?.IsAlive == true && owner.BotState == EBotState.Active && mover
-                .CurrentState == EBotMoverState.Default && !owner.DoorOpener.Interacting && !owner.DoorOpener.NearDoor
+                .CurrentState == EBotMoverState.Default && !DoorBusy(owner)
                 && (LabWorkDirector.Active || Panicked(owner)) && actors.TryGetValue(owner.ProfileId, out var state) && state
                 .Destination is { } destination && Vector3.Distance(owner.Position, destination) > 3f;
         }
@@ -157,7 +172,7 @@ namespace RaidRoulette.TestingClient
         {
             // Native door interactions temporarily replace the roaming target with
             // the handle/doorway approach point and must be allowed to pause movement.
-            if (bot.Mover.CurrentState != EBotMoverState.Default || bot.DoorOpener.Interacting || bot.DoorOpener.NearDoor)
+            if (DoorBusy(bot))
             {
                 return true;
             }
@@ -214,99 +229,174 @@ namespace RaidRoulette.TestingClient
                     }
                 }
             }
+
+            Converse();
+        }
+
+        private static void Converse()
+        {
+            if (!LabWorkDirector.Active || Time.unscaledTime < nextConversation)
+            {
+                return;
+            }
+
+            foreach (State speaker in actors.Values)
+            {
+                BotOwner owner = speaker.Owner;
+                if (Time.unscaledTime < speaker.NextSpeech || owner.BotState != EBotState.Active
+                    || owner.HealthController?.IsAlive != true || Panicked(owner))
+                {
+                    continue;
+                }
+
+                speaker.NextSpeech = Time.unscaledTime + UnityEngine.Random.Range(8f, 14f);
+                bool nearby = actors.Values.Any(other => !ReferenceEquals(other, speaker)
+                    && other.Owner.BotState == EBotState.Active
+                    && other.Owner.HealthController?.IsAlive == true
+                    && Vector3.Distance(owner.Position, other.Owner.Position) <= 6f);
+                if (!nearby || UnityEngine.Random.value >= .3f)
+                {
+                    continue;
+                }
+
+                // Demand bypasses the speaker's combat-brain request queue, which
+                // unarmed staff do not run. Use a native mutter, not a new recording
+                // or gameplay command; this is occasional proximity ambience.
+                speaker.NextSpeech = Time.unscaledTime + UnityEngine.Random.Range(40f, 75f);
+                nextConversation = Time.unscaledTime + UnityEngine.Random.Range(7f, 12f);
+                owner.GetPlayer.Say(EPhraseTrigger.OnMutter, true);
+                return;
+            }
+        }
+
+        private static bool DoorBusy(BotOwner bot)
+        {
+            // NearDoor can stay true beside an already-open laboratory door.
+            // Yield only to a real door action/closed door, not that proximity flag.
+            var opener = bot.DoorOpener;
+            return bot.Mover.CurrentState != EBotMoverState.Default
+                || opener.Interacting
+                || opener.NearDoor && opener._currentDoorLink?.Door != null
+                    && opener._currentDoorLink.Door.DoorState != EFT.Interactive.EDoorState.Open;
         }
 
         private static bool DriveHub(BotOwner bot, State state)
         {
-            // A missing hub must not fall back to the gift runner's whole-map routes.
             if (!state.Hub.HasValue || bot.BotState != EBotState.Active || bot.Mover == null)
             {
                 return true;
             }
 
-            if (bot.Mover.CurrentState != EBotMoverState.Default || bot.DoorOpener.Interacting || bot.DoorOpener.NearDoor)
+            bool doorBusy = DoorBusy(bot);
+            if (Time.unscaledTime >= state.NextDiagnostic)
             {
-                // Keep the native stop/handle animation intact. Running resumes on
-                // the existing route once the door opener returns to normal movement.
+                state.NextDiagnostic = Time.unscaledTime + 12f;
+                Plugin.Trace($"[RR-LAB-PATROL] staff={bot.ProfileId} position={bot.Position} "
+                    + $"target={state.Destination} hasPath={bot.Mover.HasPathAndNoComplete} "
+                    + $"moving={bot.Mover.IsMoving} doorBusy={doorBusy} state={bot.Mover.CurrentState} "
+                    + $"stationaryFor={Time.unscaledTime - state.LastMoved:0.0}");
+            }
+
+            if (doorBusy)
+            {
                 return true;
             }
 
-            // Native civilian updates can restore walking between route decisions.
-            // Reapply running only while following a real path; never sprint in place
-            // when a route is missing or the worker has reached its destination.
-            bool followingRoute = state.Destination.HasValue && Vector3.Distance(bot.Position, state.Destination.Value) > 1f
+            bool panicked = Panicked(bot);
+            if (panicked)
+            {
+                state.RestUntil = 0;
+            }
+            else if (state.Destination.HasValue
+                && Vector3.Distance(bot.Position, state.Destination.Value) <= 2f)
+            {
+                state.Destination = null;
+                state.RestUntil = Time.unscaledTime + UnityEngine.Random.Range(4f, 12f);
+            }
+
+            bool following = state.Destination.HasValue
+                && Vector3.Distance(bot.Position, state.Destination.Value) > 1f
                 && bot.Mover.HasPathAndNoComplete;
-            SetHubRunning(bot, followingRoute);
+            if (!panicked && following && Time.unscaledTime >= state.NextMidPause)
+            {
+                state.NextMidPause = Time.unscaledTime + UnityEngine.Random.Range(25f, 50f);
+                if (UnityEngine.Random.value < .35f)
+                {
+                    state.RestUntil = Time.unscaledTime + UnityEngine.Random.Range(2f, 5f);
+                }
+            }
+
+            if (!panicked && Time.unscaledTime < state.RestUntil)
+            {
+                // Pause the native mover without clearing its path. Mark this as
+                // intentional rest so the stationary-replan timer does not fire.
+                bot.MovementPause(state.RestUntil - Time.unscaledTime);
+                bot.Sprint(false, false);
+                state.LastMoved = Time.unscaledTime;
+                return true;
+            }
+
+            SetPatrolGait(bot, following, panicked || state.Run);
             if (Time.unscaledTime < state.NextPath)
             {
                 return true;
             }
 
             state.NextPath = Time.unscaledTime + UnityEngine.Random.Range(3f, 5f);
-            bool fleeing = Panicked(bot);
-            if (state.Destination.HasValue && Vector3.Distance(bot.Position, state.Destination.Value) > 2f && bot.Mover
-                .HasPathAndNoComplete && Time.unscaledTime - state.LastMoved < 6f)
+            if (following && Time.unscaledTime - state.LastMoved < 6f)
             {
                 return true;
             }
 
-            var hub = state.Hub.Value;
-            for (int attempt = 0; attempt < 10; attempt++)
+            if (!LabStaffHubs.TryPatrol(
+                bot.Position, ref state.PatrolCursor, out var target, out var path))
             {
-                var offset = UnityEngine.Random.insideUnitCircle * (fleeing ? 28f : 16f);
-                var candidate = hub + new Vector3(offset.x, 0f, offset.y);
-                if (!NavMesh.SamplePosition(candidate, out var floor, 2f, NavMesh.AllAreas) || Mathf.Abs(floor.position.y - hub
-                    .y) > 1.2f || Vector3.Distance(floor.position, bot.Position) < 3f)
-                {
-                    continue;
-                }
-
-                var path = new NavMeshPath();
-                if (!NavMesh.CalculatePath(bot.Position, floor.position, NavMesh.AllAreas, path) || path
-                    .status != NavMeshPathStatus.PathComplete || path.corners.Length < 2 || path.corners.Any(corner => Mathf.Abs(corner
-                    .y - hub.y) > 1.5f))
-                {
-                    continue;
-                }
-
-                if (fleeing && Vector3.Distance(floor.position, state.Threat) < 8f)
-                {
-                    continue;
-                }
-
-                state.Destination = floor.position;
-                state.Submitting = true;
-                try
-                {
-                    bot.Mover.GoToByWay(path.corners, 0.7f);
-                    SetHubRunning(bot, true);
-                }
-                finally
-                {
-                    state.Submitting = false;
-                }
-
-                Plugin.Trace($"[RR-LAB-HUB] staff={bot.ProfileId} hub={hub} target={floor.position} fleeing={fleeing}");
+                state.Destination = null;
+                SetPatrolGait(bot, false, false);
                 return true;
             }
 
-            SetHubRunning(bot, false);
+            state.Destination = target;
+            state.Run = UnityEngine.Random.value < .55f;
+            state.NextMidPause = Time.unscaledTime + UnityEngine.Random.Range(25f, 50f);
+            state.Submitting = true;
+            try
+            {
+                bot.Mover.GoToByWay(path.corners, 0.7f);
+                SetPatrolGait(bot, true, panicked || state.Run);
+            }
+            finally
+            {
+                state.Submitting = false;
+            }
+
+            Plugin.Trace($"[RR-LAB-PATROL] route staff={bot.ProfileId} from={bot.Position} "
+                + $"to={target} corners={path.corners.Length}");
             return true;
         }
 
-        private static void SetHubRunning(BotOwner bot, bool hasRoute)
+        private static void SetPatrolGait(BotOwner bot, bool hasRoute, bool running)
         {
             if (hasRoute)
             {
+                // Scripted unarmed staff have no combat/rest brain to manage
+                // stamina. Keep their patrol gait available while a route exists.
+                var stamina = bot.GetPlayer.Physical?.Stamina;
+                if (stamina != null)
+                {
+                    stamina.Current = stamina.TotalCapacity.Value;
+                    stamina.Overuse = 0;
+                }
+
                 bot.MovementResume();
-                bot.SetTargetMoveSpeed(1f);
+                bot.SetTargetMoveSpeed(running ? 1f : .65f);
                 bot.Mover.TargetPose = 1f;
                 bot.Steering.LookToMovingDirection();
             }
 
-            // Lab Work Day workers run even before gunfire. Threats still select
-            // wider escape routes, but no longer control the normal running gait.
-            bot.Sprint(hasRoute, false);
+            // Gait is chosen once per leg, avoiding a walk/run flicker each frame.
+            // Gunfire interrupts rest and forces running until the panic expires.
+            bot.Sprint(hasRoute && running, false);
         }
 
         internal static bool Drive(BotOwner bot)

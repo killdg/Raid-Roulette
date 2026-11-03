@@ -274,7 +274,7 @@ Crossing an eligible doorway has a 50% roll to move you to another safe doorway.
 <details>
 <summary>Lab Work Day</summary>
 
-Unarmed staff move through the Labs work areas while fighters battle nearby. Keyed rooms are open, and power interruptions can disrupt the run. Killing staff costs raid experience; three staff deaths call in hostile Raiders. The event is Labs-only.
+Unarmed staff travel between the Black/Green and Red/Violet office areas while fighters battle nearby. Independent destinations, mixed walking/running, short rests and occasional proximity mutters help spread workers through the main work areas. Keyed rooms are open, and power interruptions can disrupt the run. Killing staff costs raid experience; three staff deaths call in hostile Raiders. The event is Labs-only.
 
 </details>
 

@@ -6,9 +6,9 @@
 
 Keep your usual raids—or let something unexpected take over. Raid Roulette adds themed opposition, unusual loot, weather, hallucinations and wave challenges to **SPT 4.1.6**.
 
-> **Public beta:** client **2.0.144**, server **2.0.0-preview.68**, for **SPT 4.1.6**. Some events have player-confirmed tests; others still need final checks. Please report problems through [Issues](https://github.com/killdg/Raid-Roulette/issues). See [testing status](docs/VALIDATION.md).
+> **Public beta:** client **2.0.146**, server **2.0.0-preview.68**, for **SPT 4.1.6**. Some events have player-confirmed tests; others still need final checks. Please report problems through [Issues](https://github.com/killdg/Raid-Roulette/issues). See [testing status](docs/VALIDATION.md).
 
-**[Download the full beta package](https://github.com/killdg/Raid-Roulette/releases/download/v2.0.144-beta/Raid-Roulette-2.0.144.zip)** · [Release notes and matching source](https://github.com/killdg/Raid-Roulette/releases/tag/v2.0.144-beta)
+**[Download the full beta package](https://github.com/killdg/Raid-Roulette/releases/download/v2.0.146-beta/Raid-Roulette-2.0.146.zip)** · [Release notes and matching source](https://github.com/killdg/Raid-Roulette/releases/tag/v2.0.146-beta)
 
 ## About this project
 
