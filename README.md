@@ -46,6 +46,17 @@ An unsupported map runs Normal and leaves the selection waiting. Fence activatio
 
 **Gun Game [Respawns]** is a separate Fence choice. Defeat resets the ladder and knife bonus; respawning restores health and starts again with a pistol. The raid countdown continues.
 
+## Settings and event-name notices
+
+Press **F1 → Raid Roulette** to change settings. See the **[complete settings guide](docs/SETTINGS.md)** for every player-facing control, its fresh-install default and what it changes—including event selection, custom weights, Stormtide sound levels, hurricane effects, blackout chances and additional event options.
+
+| Bottom-corner notification | Fresh default | When it appears |
+| --- | --- | --- |
+| **Show raid event before raid** | **Off** | Reveals the event once when the raid begins, for example **Raid Event : Stormtide**. |
+| **Show raid event after raid** | **On** | Reveals the event on the post-raid screen, including **Raid Event : Normal**. |
+
+The switches are independent and control the event-name notices only. Turn both off to hide both notices, or leave only the after-raid notice on to keep the event a surprise. Set the before-raid option before loading the next raid; it is captured when the raid world loads. Existing saved settings are preserved when updating.
+
 ## What can happen?
 
 - **Opposition:** a pursuing boss, a boss gathering, Raiders, Cultists, guards, clones or themed Scav/PMC groups.
@@ -78,6 +89,7 @@ The optional **DG Testing Tools** package exposes developer diagnostics. Ordinar
 The main Raid Roulette download uses English. Players who want translations can install the **[separate optional Language Pack](https://github.com/killdg/Raid-Roulette/releases/tag/language-pack-v1.0.0)** alongside RR 2.0.146. It follows the game language and includes 16 additional languages for Fence assignments, event names and main menu controls, with English fallback. It is not bundled into the main installer.
 
 Translations are a first pass; some help, diagnostic and dynamic text remains English. See the [language-pack source and coverage notes](addons/LanguagePack/README.md). The pack uses no online translation service.
+
 ## Compatibility and limits
 
 - Designed and tested against **SPT 4.1.6**, using the game's and SPT's assemblies.
