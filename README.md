@@ -102,4 +102,3 @@ Source uses conventional readable C#, with comments around unusual engine integr
 Original project source is licensed under [MIT](LICENSE). SPT, Unity, BepInEx, Harmony and game assets retain their respective ownership and licenses.
 
 If you enjoy the mod, [you can feed my caffeine addiction](https://ko-fi.com/killdg).
-

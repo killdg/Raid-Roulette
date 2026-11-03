@@ -93,4 +93,3 @@ Get-FileHash -LiteralPath (Join-Path $artifacts 'Raid-Roulette-Language-Pack-1.0
     ForEach-Object { $_.Hash.ToLowerInvariant() + '  ' + [IO.Path]::GetFileName($_.Path) } |
     Set-Content -LiteralPath (Join-Path $artifacts 'SHA256SUMS.txt') -Encoding utf8
 Write-Output "Optional add-on packaged in $artifacts. No base RR files are replaced."
-

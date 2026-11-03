@@ -87,4 +87,3 @@ See `build.ps1` for local assembly references, checks and packaging. Do not
 redistribute native game/SPT DLLs with the add-on.
 
 Original add-on work: **killdg**, with **ChatGPT assistance**. MIT license.
-
