@@ -1,0 +1,222 @@
+{
+    "Language": "jp",
+    "Events": {
+        "boss_hunt": {
+            "Name": "ボスの追跡",
+            "Description": "ランダムなボスがあなたを追いかける。"
+        },
+        "boss_convention": {
+            "Name": "ボス集会",
+            "Description": "複数のボスと護衛が同じマップに集まる。"
+        },
+        "high_value_loot": {
+            "Name": "鍵の向こうの戦利品",
+            "Description": "鍵が必要な各部屋に貴重品が1～3個ある。"
+        },
+        "raider_assault": {
+            "Name": "レイダー襲撃",
+            "Description": "通常の敵がレイダーに置き換わる。"
+        },
+        "cultist_invasion": {
+            "Name": "カルト襲来",
+            "Description": "カルトがレイドを占拠する。ナイフに注意。"
+        },
+        "scav_concentrate": {
+            "Name": "Scav集結",
+            "Description": "Scavが集団で巡回する。"
+        },
+        "pmc_sweep": {
+            "Name": "PMC掃討",
+            "Description": "通常の敵がUSECとBEARの部隊に置き換わる。"
+        },
+        "get_handy": {
+            "Name": "ハンドガン戦",
+            "Description": "ScavとPMCがハンドガンと閃光弾を携帯する。"
+        },
+        "i_have_a_shot": {
+            "Name": "散弾戦",
+            "Description": "ScavとPMCがショットガンと閃光弾を携帯する。"
+        },
+        "marksman": {
+            "Name": "狙撃手",
+            "Description": "ScavとPMCが狙撃銃を携帯する。"
+        },
+        "explosive_scav_units": {
+            "Name": "爆発Scav",
+            "Description": "Scavがハンドガンとグレネードランチャーを携帯する。"
+        },
+        "outbreak": {
+            "Name": "感染拡大",
+            "Description": "レイド中、感染者が次々と現れる。"
+        },
+        "geared": {
+            "Name": "重装備",
+            "Description": "敵が強力な武器、防具、危険な弾薬を装備する。"
+        },
+        "guarded": {
+            "Name": "護衛隊",
+            "Description": "通常の敵がボスの護衛に置き換わる。"
+        },
+        "overloaded": {
+            "Name": "大容量",
+            "Description": "ScavとPMCが大容量マガジンを使用する。"
+        },
+        "matrix_glitch": {
+            "Name": "マトリックスの異常",
+            "Description": "戦闘員の集団が同じ服を着ている。"
+        },
+        "no_safe_space": {
+            "Name": "安全地帯なし",
+            "Description": "ボスを含むすべての戦闘員があなたを追跡する。"
+        },
+        "posers_everywhere": {
+            "Name": "偽物だらけ",
+            "Description": "普通の戦闘員がKillaの装備を身につける。"
+        },
+        "fake_cult": {
+            "Name": "偽カルト",
+            "Description": "敵はカルトの服を着るが、通常の戦い方を維持する。"
+        },
+        "overrun": {
+            "Name": "増援の波",
+            "Description": "戦闘員が減ると増援が補充される。"
+        },
+        "clone_wars": {
+            "Name": "クローン戦争",
+            "Description": "PMCがあなたの外見と初期装備をコピーする。"
+        },
+        "the_gift": {
+            "Name": "泥棒",
+            "Description": "サンタ帽の泥棒が物資や現金、ときにはビットコインを持ち歩く。"
+        },
+        "smokers_lobby": {
+            "Name": "喫煙ロビー",
+            "Description": "敵がレイド中ずっと発煙弾を投げる。"
+        },
+        "time_warp": {
+            "Name": "時間の歪み",
+            "Description": "昼夜が高速で巡る。レイドの残り時間は通常どおり。"
+        },
+        "schizophrenia": {
+            "Name": "統合失調症",
+            "Description": "声、人影、ありえない光景がレイドに現れる。"
+        },
+        "gun_game": {
+            "Name": "ガンゲーム",
+            "Description": "有効なキルごとに次の武器を得る。完走報酬はビットコイン。元の武器は郵便で戻る。"
+        },
+        "gun_game_respawns": {
+            "Name": "ガンゲーム[リスポーン]",
+            "Description": "敗北後は全快し、拳銃で再出発。武器の進行とナイフボーナスはリセットされる。"
+        },
+        "stormtide": {
+            "Name": "嵐の潮",
+            "Description": "5分で暗くなる。豪雨が音をかき消し、稲妻が夜を照らす。"
+        },
+        "ak50": {
+            "Name": "AK50",
+            "Description": "あなたを含む全員がAK-50を得る。元の武器は郵便で戻る。"
+        },
+        "grenadier": {
+            "Name": "擲弾兵",
+            "Description": "ScavとPMCが大量の爆発手榴弾を頻繁に投げる。"
+        },
+        "lab_work_day": {
+            "Name": "ラボ勤務日",
+            "Description": "非武装の職員がオフィス間を移動する。部屋は開放。職員を3人倒すとレイダーが来て経験値を失う。"
+        },
+        "blue_day": {
+            "Name": "青い日",
+            "Description": "サイレンが予測不能な迫撃砲撃を知らせる。屋根のある場所へ避難しよう。"
+        },
+        "snowball": {
+            "Name": "スノーボール試練",
+            "Description": "ボスが1人ずつ追ってくる。命は1つ、制限時間は2倍。隠れた挑戦もある。"
+        },
+        "trials": {
+            "Name": "試練",
+            "Description": "強さを増す5人組が10波襲来。最終波にビットコインがある。時間は2倍。"
+        },
+        "extreme_trials": {
+            "Name": "極限試練",
+            "Description": "同じボス5人が10波襲来。各波の少なくとも1人がビットコイン10枚を持つ。時間は2倍。"
+        },
+        "guard_trials": {
+            "Name": "護衛の試練",
+            "Description": "護衛5人組と戦い、最後は混成部隊。時間は2倍。"
+        },
+        "total_trial": {
+            "Name": "総合試練",
+            "Description": "5人組が20波襲来。全滅させると次の波に進む。時間は2倍。"
+        },
+        "spring": {
+            "Name": "春",
+            "Description": "このレイドだけ春の景色になる。"
+        },
+        "summer": {
+            "Name": "夏",
+            "Description": "このレイドだけ夏の景色になる。"
+        },
+        "autumn": {
+            "Name": "秋",
+            "Description": "このレイドだけ秋の景色になる。"
+        },
+        "winter": {
+            "Name": "冬",
+            "Description": "対応マップでは、このレイドだけ雪景色になる。"
+        },
+        "wrong_door": {
+            "Name": "違うドア",
+            "Description": "開いたドアを通ると、マップ上の別のドアに転送されることがある。"
+        },
+        "infrastructure_decay": {
+            "Name": "インフラの衰退",
+            "Description": "電力網が不安定になる。停電中は電動ボタンやスイッチが一時的に使えない。"
+        },
+        "normal": {
+            "Name": "通常",
+            "Description": "Raid Rouletteのイベントがない通常のレイド。"
+        }
+    },
+    "Text": {
+        "Raid Event : {0}": "レイドイベント：{0}",
+        "It's arranged.": "手配は済んだ。",
+        "We're done here.": "これで終わりだ。",
+        "Another time, then.": "またの機会にな。",
+        "I will take that assignment.": "その依頼を受ける。",
+        "The raid is over.": "レイドは終わった。",
+        "Clear every wave.": "すべての波を倒す。",
+        "Play one raid.": "レイドを1回プレイする。",
+        "Enable Raid Roulette": "Raid Rouletteを有効化",
+        "Trader Event Activation": "トレーダーからイベントを開始",
+        "Raid preset": "レイドのプリセット",
+        "Chance status": "現在の確率",
+        "Normal raid chance (%)": "通常レイドの確率（%）",
+        "Custom event mix": "イベント構成をカスタマイズ",
+        "Enable all": "すべて有効",
+        "Disable all": "すべて無効",
+        "Equal weights": "重みを均等に",
+        "End run": "挑戦を終了",
+        "Show raid event before raid": "レイド前にイベントを表示",
+        "Show raid event after raid": "レイド後にイベントを表示",
+        "Mostly Normal": "通常中心",
+        "Half And Half": "半分ずつ",
+        "Custom": "カスタム",
+        "Event": "イベント",
+        "Did you hear that?": "今の聞こえた？",
+        "....you're not dead": "....まだ死んでいない",
+        "you win": "勝利",
+        "Random": "ランダム",
+        "Weight": "重み",
+        "Search events": "イベントを検索",
+        "0. General": "0. 一般",
+        "2. Raid chances": "2. レイドの確率",
+        "6. Raid summary": "6. レイドの概要",
+        "Enable events • Weight controls relative frequency": "イベントを有効化 • 重みで相対的な頻度を調整",
+        "Mostly_Normal": "通常中心",
+        "Half_And_Half": "半分ずつ",
+        "Guard Trials": "護衛の試練",
+        "I Have A Shot": "散弾戦",
+        "Snowball Trials": "スノーボール試練"
+    }
+}

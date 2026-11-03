@@ -1,0 +1,222 @@
+{
+    "Language": "ch",
+    "Events": {
+        "boss_hunt": {
+            "Name": "首领追猎",
+            "Description": "一名随机首领会追踪并猎杀你。"
+        },
+        "boss_convention": {
+            "Name": "首领集会",
+            "Description": "多名首领及其护卫聚集在同一张地图。"
+        },
+        "high_value_loot": {
+            "Name": "锁后珍宝",
+            "Description": "每个需要钥匙的房间内都有一至三件高价值物品。"
+        },
+        "raider_assault": {
+            "Name": "掠夺者突袭",
+            "Description": "掠夺者取代普通敌人。"
+        },
+        "cultist_invasion": {
+            "Name": "邪教徒入侵",
+            "Description": "邪教徒占据战局，小心他们的刀。"
+        },
+        "scav_concentrate": {
+            "Name": "Scav集结",
+            "Description": "Scav会结群巡游。"
+        },
+        "pmc_sweep": {
+            "Name": "PMC扫荡",
+            "Description": "USEC和BEAR小队取代普通敌人。"
+        },
+        "get_handy": {
+            "Name": "手枪时刻",
+            "Description": "Scav和PMC携带手枪及闪光弹。"
+        },
+        "i_have_a_shot": {
+            "Name": "霰弹出击",
+            "Description": "Scav和PMC携带霰弹枪及闪光弹。"
+        },
+        "marksman": {
+            "Name": "神射手",
+            "Description": "Scav和PMC携带狙击步枪。"
+        },
+        "explosive_scav_units": {
+            "Name": "爆破Scav",
+            "Description": "Scav携带手枪和榴弹发射器。"
+        },
+        "outbreak": {
+            "Name": "疫情爆发",
+            "Description": "感染者会在战局中持续增援。"
+        },
+        "geared": {
+            "Name": "全副武装",
+            "Description": "敌人配备强力武器、护甲和危险弹药。"
+        },
+        "guarded": {
+            "Name": "护卫当道",
+            "Description": "首领护卫取代普通敌人。"
+        },
+        "overloaded": {
+            "Name": "超大弹匣",
+            "Description": "Scav和PMC使用大容量弹匣。"
+        },
+        "matrix_glitch": {
+            "Name": "矩阵故障",
+            "Description": "一群群战斗人员穿着相同服装。"
+        },
+        "no_safe_space": {
+            "Name": "无处安全",
+            "Description": "包括首领在内的所有战斗人员都会追踪你。"
+        },
+        "posers_everywhere": {
+            "Name": "遍地冒牌货",
+            "Description": "普通战斗人员穿着Killa的装备。"
+        },
+        "fake_cult": {
+            "Name": "伪装邪教",
+            "Description": "敌人穿着邪教徒服装，但保持原有战斗方式。"
+        },
+        "overrun": {
+            "Name": "援军不绝",
+            "Description": "战斗人员减少时，增援小队会补充损失。"
+        },
+        "clone_wars": {
+            "Name": "克隆战争",
+            "Description": "PMC复制你的外貌和初始装备。"
+        },
+        "the_gift": {
+            "Name": "窃贼",
+            "Description": "一个戴圣诞帽的窃贼携带物资、现金，有时还有比特币。"
+        },
+        "smokers_lobby": {
+            "Name": "烟雾大厅",
+            "Description": "敌人在整场战局中不断投掷烟雾弹。"
+        },
+        "time_warp": {
+            "Name": "时间扭曲",
+            "Description": "昼夜飞速交替，战局倒计时保持正常。"
+        },
+        "schizophrenia": {
+            "Name": "精神分裂",
+            "Description": "声音、人影和不可能的景象扰乱战局。"
+        },
+        "gun_game": {
+            "Name": "枪械竞赛",
+            "Description": "每次有效击杀解锁下一把武器。完成可获比特币；原有武器通过邮件返还。"
+        },
+        "gun_game_respawns": {
+            "Name": "枪械竞赛[重生]",
+            "Description": "战败后以满状态和手枪重生，武器进度及刀杀奖励进度重置。"
+        },
+        "stormtide": {
+            "Name": "风暴潮",
+            "Description": "五分钟内天色变暗。暴雨掩盖声音，闪电照亮黑夜。"
+        },
+        "ak50": {
+            "Name": "AK50",
+            "Description": "所有人包括你都获得AK-50；原有武器通过邮件返还。"
+        },
+        "grenadier": {
+            "Name": "掷弹兵",
+            "Description": "Scav和PMC频繁投掷大量爆炸手榴弹。"
+        },
+        "lab_work_day": {
+            "Name": "实验室工作日",
+            "Description": "无武装员工在办公室间活动。房门开放；杀死三名员工会引来掠夺者并扣除经验。"
+        },
+        "blue_day": {
+            "Name": "蓝色之日",
+            "Description": "警报预示无法预测的迫击炮轰击。寻找有屋顶的掩体。"
+        },
+        "snowball": {
+            "Name": "雪球试炼",
+            "Description": "首领逐一追杀你。仅有一条命，战局时长翻倍，还有隐藏挑战。"
+        },
+        "trials": {
+            "Name": "试炼",
+            "Description": "十波各五名越来越强的追猎者。最后一波携带一枚比特币；时长翻倍。"
+        },
+        "extreme_trials": {
+            "Name": "极限试炼",
+            "Description": "十波各五名相同首领。每波至少一人携带十枚比特币；时长翻倍。"
+        },
+        "guard_trials": {
+            "Name": "护卫试炼",
+            "Description": "迎战五人护卫队，最后一波为混合队伍。时长翻倍。"
+        },
+        "total_trial": {
+            "Name": "终极试炼",
+            "Description": "二十波，每波五名追猎者。全歼当前队伍后进入下一波；时长翻倍。"
+        },
+        "spring": {
+            "Name": "春季",
+            "Description": "仅在本场战局使用春季景观。"
+        },
+        "summer": {
+            "Name": "夏季",
+            "Description": "仅在本场战局使用夏季景观。"
+        },
+        "autumn": {
+            "Name": "秋季",
+            "Description": "仅在本场战局使用秋季景观。"
+        },
+        "winter": {
+            "Name": "冬季",
+            "Description": "仅在本场战局在支持的地图上呈现积雪。"
+        },
+        "wrong_door": {
+            "Name": "错门",
+            "Description": "穿过敞开的门可能将你传送到地图上的另一扇门。"
+        },
+        "infrastructure_decay": {
+            "Name": "基建衰败",
+            "Description": "电网出现故障。停电期间，电动按钮和开关暂时无法使用。"
+        },
+        "normal": {
+            "Name": "普通",
+            "Description": "没有Raid Roulette事件的普通战局。"
+        }
+    },
+    "Text": {
+        "Raid Event : {0}": "战局事件：{0}",
+        "It's arranged.": "安排好了。",
+        "We're done here.": "我们办完了。",
+        "Another time, then.": "那就下次吧。",
+        "I will take that assignment.": "我接受这个委托。",
+        "The raid is over.": "战局结束了。",
+        "Clear every wave.": "清除全部波次。",
+        "Play one raid.": "进行一场战局。",
+        "Enable Raid Roulette": "启用Raid Roulette",
+        "Trader Event Activation": "商人事件激活",
+        "Raid preset": "战局预设",
+        "Chance status": "当前概率",
+        "Normal raid chance (%)": "普通战局概率（%）",
+        "Custom event mix": "自定义事件组合",
+        "Enable all": "全部启用",
+        "Disable all": "全部禁用",
+        "Equal weights": "均等权重",
+        "End run": "结束挑战",
+        "Show raid event before raid": "战局前显示事件",
+        "Show raid event after raid": "战局后显示事件",
+        "Mostly Normal": "以普通为主",
+        "Half And Half": "各占一半",
+        "Custom": "自定义",
+        "Event": "事件",
+        "Did you hear that?": "你听到了吗？",
+        "....you're not dead": "....你还没死",
+        "you win": "你赢了",
+        "Random": "随机",
+        "Weight": "权重",
+        "Search events": "搜索事件",
+        "0. General": "0. 常规",
+        "2. Raid chances": "2. 战局概率",
+        "6. Raid summary": "6. 战局总结",
+        "Enable events • Weight controls relative frequency": "启用事件 • 权重控制相对出现频率",
+        "Mostly_Normal": "以普通为主",
+        "Half_And_Half": "各占一半",
+        "Guard Trials": "护卫试炼",
+        "I Have A Shot": "霰弹出击",
+        "Snowball Trials": "雪球试炼"
+    }
+}

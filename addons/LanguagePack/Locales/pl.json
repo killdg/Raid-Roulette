@@ -1,0 +1,222 @@
+{
+    "Language": "pl",
+    "Events": {
+        "boss_hunt": {
+            "Name": "Polowanie bossa",
+            "Description": "Losowy boss ściga cię i próbuje do ciebie dotrzeć."
+        },
+        "boss_convention": {
+            "Name": "Zjazd bossów",
+            "Description": "Kilku bossów i ich strażników spotyka się na mapie."
+        },
+        "high_value_loot": {
+            "Name": "Łup pod kluczem",
+            "Description": "Każdy pokój zamknięty na klucz zawiera od jednego do trzech cennych przedmiotów."
+        },
+        "raider_assault": {
+            "Name": "Szturm Raiderów",
+            "Description": "Raiderzy zastępują zwykłych przeciwników."
+        },
+        "cultist_invasion": {
+            "Name": "Inwazja kultystów",
+            "Description": "Kultyści opanowali rajd. Uważaj na ich noże."
+        },
+        "scav_concentrate": {
+            "Name": "Zbiórka Scavów",
+            "Description": "Scavowie przemieszczają się grupami."
+        },
+        "pmc_sweep": {
+            "Name": "Przeczesanie PMC",
+            "Description": "Grupy USEC i BEAR zastępują zwykłych przeciwników."
+        },
+        "get_handy": {
+            "Name": "Pora na pistolety",
+            "Description": "Scavowie i PMC mają pistolety oraz granaty błyskowe."
+        },
+        "i_have_a_shot": {
+            "Name": "Strzał ze strzelby",
+            "Description": "Scavowie i PMC mają strzelby oraz granaty błyskowe."
+        },
+        "marksman": {
+            "Name": "Strzelec wyborowy",
+            "Description": "Scavowie i PMC mają karabiny snajperskie."
+        },
+        "explosive_scav_units": {
+            "Name": "Wybuchowi Scavowie",
+            "Description": "Scavowie mają pistolety i granatniki."
+        },
+        "outbreak": {
+            "Name": "Epidemia",
+            "Description": "Zarażeni przybywają przez cały rajd."
+        },
+        "geared": {
+            "Name": "Dobrze wyposażeni",
+            "Description": "Przeciwnicy mają potężną broń, pancerze i groźną amunicję."
+        },
+        "guarded": {
+            "Name": "Pod strażą",
+            "Description": "Strażnicy bossów zastępują zwykłych przeciwników."
+        },
+        "overloaded": {
+            "Name": "Przeładowani",
+            "Description": "Scavowie i PMC mają magazynki dużej pojemności."
+        },
+        "matrix_glitch": {
+            "Name": "Błąd Matrixa",
+            "Description": "Grupy bojowników noszą takie same ubrania."
+        },
+        "no_safe_space": {
+            "Name": "Nigdzie bezpiecznie",
+            "Description": "Wszyscy bojownicy, w tym bossowie, śledzą twoją pozycję."
+        },
+        "posers_everywhere": {
+            "Name": "Wszędzie pozerzy",
+            "Description": "Zwykli bojownicy noszą wyposażenie Killi."
+        },
+        "fake_cult": {
+            "Name": "Fałszywy kult",
+            "Description": "Przeciwnicy wyglądają jak kultyści, ale walczą po swojemu."
+        },
+        "overrun": {
+            "Name": "Naparcie",
+            "Description": "Posiłki zastępują straty, gdy liczba bojowników spada."
+        },
+        "clone_wars": {
+            "Name": "Wojny klonów",
+            "Description": "PMC kopiują twój wygląd i początkowe wyposażenie."
+        },
+        "the_gift": {
+            "Name": "Złodziej",
+            "Description": "Złodziej w świątecznej czapce niesie zapasy, pieniądze i czasem bitcoiny."
+        },
+        "smokers_lobby": {
+            "Name": "Palarnia",
+            "Description": "Przeciwnicy rzucają granaty dymne przez cały rajd."
+        },
+        "time_warp": {
+            "Name": "Zakrzywienie czasu",
+            "Description": "Dzień i noc mijają szybko. Licznik rajdu działa normalnie."
+        },
+        "schizophrenia": {
+            "Name": "Schizofrenia",
+            "Description": "Głosy, postacie i niemożliwe widoki zakłócają rajd."
+        },
+        "gun_game": {
+            "Name": "Wyścig zbrojeń",
+            "Description": "Każde zaliczone zabójstwo daje nową broń. Wygraj bitcoin; pierwotna broń wróci pocztą."
+        },
+        "gun_game_respawns": {
+            "Name": "Wyścig zbrojeń [Odrodzenia]",
+            "Description": "Po porażce wracasz zdrowy z pistoletem. Postęp i bonus noża są zerowane."
+        },
+        "stormtide": {
+            "Name": "Sztormowa fala",
+            "Description": "Po pięciu minutach robi się ciemno. Ulewa tłumi dźwięki, a błyskawice rozświetlają noc."
+        },
+        "ak50": {
+            "Name": "AK50",
+            "Description": "Wszyscy dostają AK-50, także ty. Pierwotna broń wróci pocztą."
+        },
+        "grenadier": {
+            "Name": "Grenadier",
+            "Description": "Scavowie i PMC często rzucają granaty wybuchowe."
+        },
+        "lab_work_day": {
+            "Name": "Dzień pracy w laboratorium",
+            "Description": "Nieuzbrojeni pracownicy krążą między biurami. Pokoje są otwarte; zabicie trzech pracowników wzywa Raiderów i kosztuje doświadczenie."
+        },
+        "blue_day": {
+            "Name": "Błękitny dzień",
+            "Description": "Syrena ostrzega przed nieprzewidywalnym ostrzałem moździerzowym. Szukaj dachu."
+        },
+        "snowball": {
+            "Name": "Próba Śnieżnej kuli",
+            "Description": "Bossowie ścigają cię pojedynczo. Jedno życie, podwójny czas i ukryte wyzwanie."
+        },
+        "trials": {
+            "Name": "Próby",
+            "Description": "Dziesięć fal po pięciu coraz silniejszych łowców. Ostatnia niesie bitcoin; podwójny czas."
+        },
+        "extreme_trials": {
+            "Name": "Ekstremalne próby",
+            "Description": "Dziesięć fal po pięciu identycznych bossów. Jeden członek każdej fali niesie dziesięć bitcoinów; podwójny czas."
+        },
+        "guard_trials": {
+            "Name": "Próba strażników",
+            "Description": "Walcz z piątkami strażników i ostatnią grupą mieszaną. Podwójny czas."
+        },
+        "total_trial": {
+            "Name": "Pełna próba",
+            "Description": "Dwadzieścia fal po pięciu łowców. Zabij całą grupę, by przejść dalej; podwójny czas."
+        },
+        "spring": {
+            "Name": "Wiosna",
+            "Description": "Wiosenny krajobraz tylko na ten rajd."
+        },
+        "summer": {
+            "Name": "Lato",
+            "Description": "Letni krajobraz tylko na ten rajd."
+        },
+        "autumn": {
+            "Name": "Jesień",
+            "Description": "Jesienne kolory tylko na ten rajd."
+        },
+        "winter": {
+            "Name": "Zima",
+            "Description": "Śnieg na obsługiwanych mapach tylko na ten rajd."
+        },
+        "wrong_door": {
+            "Name": "Złe drzwi",
+            "Description": "Przejście przez otwarte drzwi może przenieść cię do innych drzwi na mapie."
+        },
+        "infrastructure_decay": {
+            "Name": "Rozpad infrastruktury",
+            "Description": "Sieć elektryczna zawodzi. Awarie czasowo blokują elektryczne przyciski i przełączniki."
+        },
+        "normal": {
+            "Name": "Normalny",
+            "Description": "Zwykły rajd bez wydarzenia Raid Roulette."
+        }
+    },
+    "Text": {
+        "Raid Event : {0}": "Wydarzenie rajdu: {0}",
+        "It's arranged.": "Załatwione.",
+        "We're done here.": "Skończyliśmy tutaj.",
+        "Another time, then.": "To innym razem.",
+        "I will take that assignment.": "Biorę to zlecenie.",
+        "The raid is over.": "Rajd się skończył.",
+        "Clear every wave.": "Pokonaj wszystkie fale.",
+        "Play one raid.": "Rozegraj jeden rajd.",
+        "Enable Raid Roulette": "Włącz Raid Roulette",
+        "Trader Event Activation": "Aktywacja u handlarza",
+        "Raid preset": "Zestaw ustawień rajdu",
+        "Chance status": "Aktualne szanse",
+        "Normal raid chance (%)": "Szansa normalnego rajdu (%)",
+        "Custom event mix": "Własna mieszanka wydarzeń",
+        "Enable all": "Włącz wszystkie",
+        "Disable all": "Wyłącz wszystkie",
+        "Equal weights": "Równe wagi",
+        "End run": "Zakończ rozgrywkę",
+        "Show raid event before raid": "Pokaż wydarzenie przed rajdem",
+        "Show raid event after raid": "Pokaż wydarzenie po rajdzie",
+        "Mostly Normal": "Głównie normalne",
+        "Half And Half": "Pół na pół",
+        "Custom": "Własne",
+        "Event": "Wydarzenie",
+        "Did you hear that?": "Słyszałeś to?",
+        "....you're not dead": "....nie jesteś martwy",
+        "you win": "wygrywasz",
+        "Random": "Losowe",
+        "Weight": "Waga",
+        "Search events": "Szukaj wydarzeń",
+        "0. General": "0. Ogólne",
+        "2. Raid chances": "2. Szanse rajdów",
+        "6. Raid summary": "6. Podsumowanie rajdu",
+        "Enable events • Weight controls relative frequency": "Włącz wydarzenia • Waga określa względną częstotliwość",
+        "Mostly_Normal": "Głównie normalne",
+        "Half_And_Half": "Pół na pół",
+        "Guard Trials": "Próba strażników",
+        "I Have A Shot": "Strzał ze strzelby",
+        "Snowball Trials": "Próba Śnieżnej kuli"
+    }
+}

@@ -1,0 +1,222 @@
+{
+    "Language": "es",
+    "Events": {
+        "boss_hunt": {
+            "Name": "Cacería del jefe",
+            "Description": "Un jefe aleatorio te persigue para matarte."
+        },
+        "boss_convention": {
+            "Name": "Convención de jefes",
+            "Description": "Varios jefes y sus guardias se reúnen en el mapa."
+        },
+        "high_value_loot": {
+            "Name": "Botín bajo llave",
+            "Description": "Cada habitación cerrada con llave contiene entre uno y tres objetos valiosos."
+        },
+        "raider_assault": {
+            "Name": "Asalto de Raiders",
+            "Description": "Los Raiders sustituyen a los enemigos habituales."
+        },
+        "cultist_invasion": {
+            "Name": "Invasión de sectarios",
+            "Description": "Los sectarios dominan la incursión. Cuidado con sus cuchillos."
+        },
+        "scav_concentrate": {
+            "Name": "Concentración de Scavs",
+            "Description": "Los Scavs recorren el mapa en grupos."
+        },
+        "pmc_sweep": {
+            "Name": "Barrido de PMC",
+            "Description": "Grupos USEC y BEAR sustituyen a los enemigos habituales."
+        },
+        "get_handy": {
+            "Name": "A punta de pistola",
+            "Description": "Los Scavs y PMC llevan pistolas y granadas cegadoras."
+        },
+        "i_have_a_shot": {
+            "Name": "Escopetazo",
+            "Description": "Los Scavs y PMC llevan escopetas y granadas cegadoras."
+        },
+        "marksman": {
+            "Name": "Tirador",
+            "Description": "Los Scavs y PMC llevan fusiles de francotirador."
+        },
+        "explosive_scav_units": {
+            "Name": "Scavs explosivos",
+            "Description": "Los Scavs llevan pistolas y lanzagranadas."
+        },
+        "outbreak": {
+            "Name": "Brote",
+            "Description": "Siguen llegando infectados durante la incursión."
+        },
+        "geared": {
+            "Name": "Bien equipados",
+            "Description": "Los enemigos llevan armas potentes, blindaje y munición peligrosa."
+        },
+        "guarded": {
+            "Name": "Custodiado",
+            "Description": "Los guardias de los jefes sustituyen a los enemigos habituales."
+        },
+        "overloaded": {
+            "Name": "Sobrecargados",
+            "Description": "Los Scavs y PMC llevan cargadores de gran capacidad."
+        },
+        "matrix_glitch": {
+            "Name": "Fallo en Matrix",
+            "Description": "Grupos de combatientes llevan la misma ropa."
+        },
+        "no_safe_space": {
+            "Name": "Sin lugar seguro",
+            "Description": "Todos los combatientes, incluidos los jefes, rastrean tu posición."
+        },
+        "posers_everywhere": {
+            "Name": "Impostores por todas partes",
+            "Description": "Combatientes normales llevan el equipo de Killa."
+        },
+        "fake_cult": {
+            "Name": "Secta falsa",
+            "Description": "Los enemigos visten como sectarios, pero conservan su estilo de combate."
+        },
+        "overrun": {
+            "Name": "Desbordados",
+            "Description": "Llegan refuerzos cuando disminuye la población de combatientes."
+        },
+        "clone_wars": {
+            "Name": "Guerra de clones",
+            "Description": "Los PMC copian tu aspecto y tu equipo inicial."
+        },
+        "the_gift": {
+            "Name": "El ladrón",
+            "Description": "Un ladrón con gorro navideño lleva suministros, dinero y a veces bitcoins."
+        },
+        "smokers_lobby": {
+            "Name": "Sala de fumadores",
+            "Description": "Los enemigos lanzan humo durante toda la incursión."
+        },
+        "time_warp": {
+            "Name": "Distorsión temporal",
+            "Description": "El día y la noche pasan rápidamente. El temporizador sigue normal."
+        },
+        "schizophrenia": {
+            "Name": "Esquizofrenia",
+            "Description": "Voces, figuras y visiones imposibles alteran la incursión."
+        },
+        "gun_game": {
+            "Name": "Juego de armas",
+            "Description": "Cada baja válida da una nueva arma. Gana un bitcoin; tus armas originales vuelven por correo."
+        },
+        "gun_game_respawns": {
+            "Name": "Juego de armas [Reapariciones]",
+            "Description": "Tras caer, reapareces sano con pistola. Se reinician la progresión y el bonus de cuchillo."
+        },
+        "stormtide": {
+            "Name": "Marea de tormenta",
+            "Description": "Oscurece en cinco minutos. La lluvia intensa oculta sonidos y los rayos iluminan la noche."
+        },
+        "ak50": {
+            "Name": "AK50",
+            "Description": "Todos llevan un AK-50, incluido tú. Tus armas originales vuelven por correo."
+        },
+        "grenadier": {
+            "Name": "Granadero",
+            "Description": "Los Scavs y PMC lanzan muchas granadas explosivas."
+        },
+        "lab_work_day": {
+            "Name": "Jornada de laboratorio",
+            "Description": "Trabajadores desarmados recorren las oficinas. Salas abiertas; matar a tres trabajadores atrae Raiders y cuesta experiencia."
+        },
+        "blue_day": {
+            "Name": "Día azul",
+            "Description": "Una sirena avisa de bombardeos de mortero imprevisibles. Busca un techo."
+        },
+        "snowball": {
+            "Name": "Prueba Bola de nieve",
+            "Description": "Los jefes te cazan uno por uno. Una vida, tiempo doble y un desafío oculto."
+        },
+        "trials": {
+            "Name": "Pruebas",
+            "Description": "Diez oleadas de cinco cazadores cada vez más fuertes. La última lleva un bitcoin; tiempo doble."
+        },
+        "extreme_trials": {
+            "Name": "Pruebas extremas",
+            "Description": "Diez oleadas de cinco jefes idénticos. Un miembro de cada oleada lleva diez bitcoins; tiempo doble."
+        },
+        "guard_trials": {
+            "Name": "Prueba de guardias",
+            "Description": "Combate contra grupos de cinco guardias y un grupo mixto final. Tiempo doble."
+        },
+        "total_trial": {
+            "Name": "Prueba total",
+            "Description": "Veinte oleadas de cinco cazadores. Elimina cada grupo para avanzar; tiempo doble."
+        },
+        "spring": {
+            "Name": "Primavera",
+            "Description": "Paisaje primaveral solo para esta incursión."
+        },
+        "summer": {
+            "Name": "Verano",
+            "Description": "Paisaje veraniego solo para esta incursión."
+        },
+        "autumn": {
+            "Name": "Otoño",
+            "Description": "Colores otoñales solo para esta incursión."
+        },
+        "winter": {
+            "Name": "Invierno",
+            "Description": "Nieve en los mapas compatibles, solo para esta incursión."
+        },
+        "wrong_door": {
+            "Name": "Puerta equivocada",
+            "Description": "Cruzar una puerta abierta puede teletransportarte a otra puerta del mapa."
+        },
+        "infrastructure_decay": {
+            "Name": "Infraestructura en ruinas",
+            "Description": "La red eléctrica falla. Los apagones bloquean temporalmente botones e interruptores eléctricos."
+        },
+        "normal": {
+            "Name": "Normal",
+            "Description": "Una incursión normal sin evento de Raid Roulette."
+        }
+    },
+    "Text": {
+        "Raid Event : {0}": "Evento de incursión: {0}",
+        "It's arranged.": "Está arreglado.",
+        "We're done here.": "Hemos terminado.",
+        "Another time, then.": "En otra ocasión.",
+        "I will take that assignment.": "Acepto el encargo.",
+        "The raid is over.": "La incursión terminó.",
+        "Clear every wave.": "Supera todas las oleadas.",
+        "Play one raid.": "Juega una incursión.",
+        "Enable Raid Roulette": "Activar Raid Roulette",
+        "Trader Event Activation": "Activación por comerciante",
+        "Raid preset": "Preajuste de incursiones",
+        "Chance status": "Probabilidades actuales",
+        "Normal raid chance (%)": "Probabilidad de incursión normal (%)",
+        "Custom event mix": "Mezcla personalizada de eventos",
+        "Enable all": "Activar todos",
+        "Disable all": "Desactivar todos",
+        "Equal weights": "Pesos iguales",
+        "End run": "Terminar partida",
+        "Show raid event before raid": "Mostrar evento antes de la incursión",
+        "Show raid event after raid": "Mostrar evento después de la incursión",
+        "Mostly Normal": "Mayormente normal",
+        "Half And Half": "Mitad y mitad",
+        "Custom": "Personalizado",
+        "Event": "Evento",
+        "Did you hear that?": "¿Has oído eso?",
+        "....you're not dead": "....no estás muerto",
+        "you win": "ganaste",
+        "Random": "Aleatorio",
+        "Weight": "Peso",
+        "Search events": "Buscar eventos",
+        "0. General": "0. General",
+        "2. Raid chances": "2. Probabilidades de incursión",
+        "6. Raid summary": "6. Resumen de incursión",
+        "Enable events • Weight controls relative frequency": "Activa eventos • El peso controla la frecuencia relativa",
+        "Mostly_Normal": "Mayormente normal",
+        "Half_And_Half": "Mitad y mitad",
+        "Guard Trials": "Prueba de guardias",
+        "I Have A Shot": "Escopetazo",
+        "Snowball Trials": "Prueba Bola de nieve"
+    }
+}

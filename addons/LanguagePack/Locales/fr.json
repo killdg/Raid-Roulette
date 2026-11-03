@@ -1,0 +1,222 @@
+{
+    "Language": "fr",
+    "Events": {
+        "boss_hunt": {
+            "Name": "Traque du boss",
+            "Description": "Un boss vous traque et tente de vous rejoindre."
+        },
+        "boss_convention": {
+            "Name": "Convention des boss",
+            "Description": "Plusieurs boss et leurs gardes se retrouvent sur la carte."
+        },
+        "high_value_loot": {
+            "Name": "Butin sous clé",
+            "Description": "Chaque pièce verrouillée à clé cache un à trois objets précieux."
+        },
+        "raider_assault": {
+            "Name": "Assaut des Raiders",
+            "Description": "Les Raiders remplacent les adversaires habituels."
+        },
+        "cultist_invasion": {
+            "Name": "Invasion des cultistes",
+            "Description": "Les cultistes envahissent le raid. Méfiez-vous de leurs couteaux."
+        },
+        "scav_concentrate": {
+            "Name": "Rassemblement de Scavs",
+            "Description": "Les Scavs se déplacent en groupes."
+        },
+        "pmc_sweep": {
+            "Name": "Ratissage des PMC",
+            "Description": "Des groupes USEC et BEAR remplacent les adversaires habituels."
+        },
+        "get_handy": {
+            "Name": "À portée de pistolet",
+            "Description": "Les Scavs et PMC portent des pistolets et des grenades aveuglantes."
+        },
+        "i_have_a_shot": {
+            "Name": "Coup de pompe",
+            "Description": "Les Scavs et PMC portent des fusils à pompe et des grenades aveuglantes."
+        },
+        "marksman": {
+            "Name": "Tireur d'élite",
+            "Description": "Les Scavs et PMC portent des fusils de précision."
+        },
+        "explosive_scav_units": {
+            "Name": "Scavs explosifs",
+            "Description": "Les Scavs portent des pistolets et des lance-grenades."
+        },
+        "outbreak": {
+            "Name": "Épidémie",
+            "Description": "Des infectés arrivent tout au long du raid."
+        },
+        "geared": {
+            "Name": "Suréquipés",
+            "Description": "Les ennemis portent des armes puissantes, des armures et des munitions redoutables."
+        },
+        "guarded": {
+            "Name": "Sous bonne garde",
+            "Description": "Les gardes des boss remplacent les adversaires habituels."
+        },
+        "overloaded": {
+            "Name": "Chargeurs démesurés",
+            "Description": "Les Scavs et PMC disposent de chargeurs de grande capacité."
+        },
+        "matrix_glitch": {
+            "Name": "Bug de la matrice",
+            "Description": "Des groupes de combattants portent les mêmes vêtements."
+        },
+        "no_safe_space": {
+            "Name": "Nulle part à l'abri",
+            "Description": "Tous les combattants, boss compris, traquent votre position."
+        },
+        "posers_everywhere": {
+            "Name": "Imposteurs partout",
+            "Description": "Des combattants ordinaires portent l'équipement de Killa."
+        },
+        "fake_cult": {
+            "Name": "Faux culte",
+            "Description": "Les adversaires portent des tenues de cultistes, mais gardent leur façon de combattre."
+        },
+        "overrun": {
+            "Name": "Submergés",
+            "Description": "Des renforts remplacent les pertes lorsque la population diminue."
+        },
+        "clone_wars": {
+            "Name": "Guerre des clones",
+            "Description": "Les PMC copient votre apparence et votre équipement de départ."
+        },
+        "the_gift": {
+            "Name": "Le voleur",
+            "Description": "Un voleur au bonnet de Noël transporte des provisions, de l'argent et parfois des bitcoins."
+        },
+        "smokers_lobby": {
+            "Name": "Salon des fumeurs",
+            "Description": "Les adversaires lancent des fumigènes tout au long du raid."
+        },
+        "time_warp": {
+            "Name": "Distorsion temporelle",
+            "Description": "Le jour et la nuit défilent rapidement. Le compte à rebours reste normal."
+        },
+        "schizophrenia": {
+            "Name": "Schizophrénie",
+            "Description": "Voix, silhouettes et visions impossibles troublent le raid."
+        },
+        "gun_game": {
+            "Name": "Course aux armes",
+            "Description": "Chaque élimination valide débloque l'arme suivante. Terminez pour un bitcoin ; vos armes initiales reviennent par courrier."
+        },
+        "gun_game_respawns": {
+            "Name": "Course aux armes [Réapparitions]",
+            "Description": "Après une défaite, repartez en pleine santé avec un pistolet. La progression et le bonus au couteau sont réinitialisés."
+        },
+        "stormtide": {
+            "Name": "Marée d'orage",
+            "Description": "Il fait nuit en cinq minutes. La pluie intense couvre les autres bruits et les éclairs illuminent le ciel."
+        },
+        "ak50": {
+            "Name": "AK50",
+            "Description": "Tout le monde porte un AK-50, vous compris. Vos armes initiales reviennent par courrier."
+        },
+        "grenadier": {
+            "Name": "Grenadier",
+            "Description": "Les Scavs et PMC lancent de nombreuses grenades explosives."
+        },
+        "lab_work_day": {
+            "Name": "Journée au labo",
+            "Description": "Des employés non armés circulent entre les bureaux. Les salles sont ouvertes ; tuer trois employés attire des Raiders et coûte de l'expérience."
+        },
+        "blue_day": {
+            "Name": "Jour bleu",
+            "Description": "Une sirène annonce des bombardements de mortier imprévisibles. Abritez-vous sous un toit."
+        },
+        "snowball": {
+            "Name": "Épreuve Boule de neige",
+            "Description": "Affrontez les boss un par un en une seule vie. Temps de raid doublé et défi caché."
+        },
+        "trials": {
+            "Name": "Épreuves",
+            "Description": "Dix vagues de cinq chasseurs de plus en plus forts. Un bitcoin dans la dernière vague ; temps doublé."
+        },
+        "extreme_trials": {
+            "Name": "Épreuves extrêmes",
+            "Description": "Dix vagues de cinq boss identiques. Un membre de chaque vague porte dix bitcoins ; temps doublé."
+        },
+        "guard_trials": {
+            "Name": "Épreuve des gardes",
+            "Description": "Affrontez des escouades de cinq gardes, puis un groupe mélangé. Temps doublé."
+        },
+        "total_trial": {
+            "Name": "Épreuve totale",
+            "Description": "Vingt vagues de cinq chasseurs. Éliminez chaque groupe pour continuer ; temps doublé."
+        },
+        "spring": {
+            "Name": "Printemps",
+            "Description": "Décor printanier pour ce raid uniquement."
+        },
+        "summer": {
+            "Name": "Été",
+            "Description": "Décor estival pour ce raid uniquement."
+        },
+        "autumn": {
+            "Name": "Automne",
+            "Description": "Couleurs d'automne pour ce raid uniquement."
+        },
+        "winter": {
+            "Name": "Hiver",
+            "Description": "Neige hivernale sur les cartes compatibles, pour ce raid uniquement."
+        },
+        "wrong_door": {
+            "Name": "Mauvaise porte",
+            "Description": "Franchir une porte ouverte peut vous téléporter vers une autre porte de la carte."
+        },
+        "infrastructure_decay": {
+            "Name": "Infrastructure en déclin",
+            "Description": "Le réseau électrique vacille. Les coupures désactivent temporairement les boutons et interrupteurs électriques."
+        },
+        "normal": {
+            "Name": "Normal",
+            "Description": "Un raid normal sans événement Raid Roulette."
+        }
+    },
+    "Text": {
+        "Raid Event : {0}": "Événement de raid : {0}",
+        "It's arranged.": "C'est arrangé.",
+        "We're done here.": "Nous en avons terminé.",
+        "Another time, then.": "Une autre fois, alors.",
+        "I will take that assignment.": "J'accepte cette mission.",
+        "The raid is over.": "Le raid est terminé.",
+        "Clear every wave.": "Éliminez toutes les vagues.",
+        "Play one raid.": "Participez à un raid.",
+        "Enable Raid Roulette": "Activer Raid Roulette",
+        "Trader Event Activation": "Activation par le marchand",
+        "Raid preset": "Préréglage des raids",
+        "Chance status": "Probabilités actuelles",
+        "Normal raid chance (%)": "Chance de raid normal (%)",
+        "Custom event mix": "Mélange d'événements personnalisé",
+        "Enable all": "Tout activer",
+        "Disable all": "Tout désactiver",
+        "Equal weights": "Poids égaux",
+        "End run": "Terminer la partie",
+        "Show raid event before raid": "Afficher l'événement avant le raid",
+        "Show raid event after raid": "Afficher l'événement après le raid",
+        "Mostly Normal": "Surtout normal",
+        "Half And Half": "Moitié-moitié",
+        "Custom": "Personnalisé",
+        "Event": "Événement",
+        "Did you hear that?": "Vous avez entendu ça ?",
+        "....you're not dead": "....vous n'êtes pas mort",
+        "you win": "vous avez gagné",
+        "Random": "Aléatoire",
+        "Weight": "Poids",
+        "Search events": "Rechercher des événements",
+        "0. General": "0. Général",
+        "2. Raid chances": "2. Probabilités des raids",
+        "6. Raid summary": "6. Résumé du raid",
+        "Enable events • Weight controls relative frequency": "Activer des événements • Le poids règle la fréquence relative",
+        "Mostly_Normal": "Surtout normal",
+        "Half_And_Half": "Moitié-moitié",
+        "Guard Trials": "Épreuve des gardes",
+        "I Have A Shot": "Coup de pompe",
+        "Snowball Trials": "Épreuve Boule de neige"
+    }
+}

@@ -1,0 +1,222 @@
+{
+    "Language": "ro",
+    "Events": {
+        "boss_hunt": {
+            "Name": "Vânătoarea șefului",
+            "Description": "Un șef aleatoriu te urmărește."
+        },
+        "boss_convention": {
+            "Name": "Convenția șefilor",
+            "Description": "Mai mulți șefi și gărzile lor se adună pe hartă."
+        },
+        "high_value_loot": {
+            "Name": "Pradă sub cheie",
+            "Description": "Fiecare cameră încuiată cu cheie conține între unu și trei obiecte valoroase."
+        },
+        "raider_assault": {
+            "Name": "Asaltul Raiderilor",
+            "Description": "Raiderii înlocuiesc adversarii obișnuiți."
+        },
+        "cultist_invasion": {
+            "Name": "Invazia cultiștilor",
+            "Description": "Cultiștii invadează raidul. Ferește-te de cuțitele lor."
+        },
+        "scav_concentrate": {
+            "Name": "Adunarea Scavilor",
+            "Description": "Scavii se deplasează în grupuri."
+        },
+        "pmc_sweep": {
+            "Name": "Curățenie PMC",
+            "Description": "Grupuri USEC și BEAR înlocuiesc adversarii obișnuiți."
+        },
+        "get_handy": {
+            "Name": "La pistol",
+            "Description": "Scavii și PMC-urile au pistoale și grenade orbitoare."
+        },
+        "i_have_a_shot": {
+            "Name": "Foc de alice",
+            "Description": "Scavii și PMC-urile au puști cu alice și grenade orbitoare."
+        },
+        "marksman": {
+            "Name": "Lunetist",
+            "Description": "Scavii și PMC-urile au puști cu lunetă."
+        },
+        "explosive_scav_units": {
+            "Name": "Scavi explozivi",
+            "Description": "Scavii au pistoale și lansatoare de grenade."
+        },
+        "outbreak": {
+            "Name": "Epidemie",
+            "Description": "Infectații continuă să sosească pe tot parcursul raidului."
+        },
+        "geared": {
+            "Name": "Bine echipați",
+            "Description": "Adversarii au arme puternice, armură și muniție periculoasă."
+        },
+        "guarded": {
+            "Name": "Sub pază",
+            "Description": "Gărzile șefilor înlocuiesc adversarii obișnuiți."
+        },
+        "overloaded": {
+            "Name": "Supraîncărcați",
+            "Description": "Scavii și PMC-urile au încărcătoare de mare capacitate."
+        },
+        "matrix_glitch": {
+            "Name": "Eroare în Matrix",
+            "Description": "Grupuri de luptători poartă aceleași haine."
+        },
+        "no_safe_space": {
+            "Name": "Niciun loc sigur",
+            "Description": "Toți luptătorii, inclusiv șefii, îți urmăresc poziția."
+        },
+        "posers_everywhere": {
+            "Name": "Impostori peste tot",
+            "Description": "Luptători obișnuiți poartă echipamentul lui Killa."
+        },
+        "fake_cult": {
+            "Name": "Cult fals",
+            "Description": "Adversarii se îmbracă precum cultiștii, dar își păstrează stilul de luptă."
+        },
+        "overrun": {
+            "Name": "Copleșit",
+            "Description": "Întăririle înlocuiesc pierderile când scade numărul luptătorilor."
+        },
+        "clone_wars": {
+            "Name": "Războiul clonelor",
+            "Description": "PMC-urile îți copiază aspectul și echipamentul inițial."
+        },
+        "the_gift": {
+            "Name": "Hoțul",
+            "Description": "Un hoț cu căciulă de Crăciun transportă provizii, bani și uneori bitcoini."
+        },
+        "smokers_lobby": {
+            "Name": "Salonul fumătorilor",
+            "Description": "Adversarii aruncă grenade fumigene pe tot parcursul raidului."
+        },
+        "time_warp": {
+            "Name": "Deformarea timpului",
+            "Description": "Ziua și noaptea trec rapid. Cronometrul raidului rămâne normal."
+        },
+        "schizophrenia": {
+            "Name": "Schizofrenie",
+            "Description": "Voci, siluete și viziuni imposibile tulbură raidul."
+        },
+        "gun_game": {
+            "Name": "Cursa armelor",
+            "Description": "Fiecare eliminare validă oferă altă armă. Câștigă un bitcoin; armele originale revin prin poștă."
+        },
+        "gun_game_respawns": {
+            "Name": "Cursa armelor [Reînvieri]",
+            "Description": "După înfrângere revii sănătos, cu pistol. Progresul și bonusul cuțitului se resetează."
+        },
+        "stormtide": {
+            "Name": "Maree de furtună",
+            "Description": "Se întunecă în cinci minute. Ploaia puternică acoperă sunetele, iar fulgerele luminează noaptea."
+        },
+        "ak50": {
+            "Name": "AK50",
+            "Description": "Toată lumea primește un AK-50, inclusiv tu. Armele originale revin prin poștă."
+        },
+        "grenadier": {
+            "Name": "Grenadier",
+            "Description": "Scavii și PMC-urile aruncă frecvent grenade explozive."
+        },
+        "lab_work_day": {
+            "Name": "Zi de lucru în laborator",
+            "Description": "Angajați neînarmați circulă între birouri. Camere deschise; uciderea a trei angajați atrage Raideri și costă experiență."
+        },
+        "blue_day": {
+            "Name": "Zi albastră",
+            "Description": "O sirenă anunță bombardamente imprevizibile de mortier. Caută un acoperiș."
+        },
+        "snowball": {
+            "Name": "Proba Bulgărelui",
+            "Description": "Șefii te vânează pe rând. O viață, timp dublu și o provocare ascunsă."
+        },
+        "trials": {
+            "Name": "Probe",
+            "Description": "Zece valuri de câte cinci vânători tot mai puternici. Ultimul are un bitcoin; timp dublu."
+        },
+        "extreme_trials": {
+            "Name": "Probe extreme",
+            "Description": "Zece valuri de câte cinci șefi identici. Un membru al fiecărui val are zece bitcoini; timp dublu."
+        },
+        "guard_trials": {
+            "Name": "Proba gărzilor",
+            "Description": "Înfruntă grupuri de cinci gărzi și un grup mixt final. Timp dublu."
+        },
+        "total_trial": {
+            "Name": "Proba totală",
+            "Description": "Douăzeci de valuri de câte cinci vânători. Elimină tot grupul pentru a continua; timp dublu."
+        },
+        "spring": {
+            "Name": "Primăvară",
+            "Description": "Peisaj de primăvară doar pentru acest raid."
+        },
+        "summer": {
+            "Name": "Vară",
+            "Description": "Peisaj de vară doar pentru acest raid."
+        },
+        "autumn": {
+            "Name": "Toamnă",
+            "Description": "Culori de toamnă doar pentru acest raid."
+        },
+        "winter": {
+            "Name": "Iarnă",
+            "Description": "Zăpadă pe hărțile compatibile doar pentru acest raid."
+        },
+        "wrong_door": {
+            "Name": "Ușa greșită",
+            "Description": "Trecerea printr-o ușă deschisă te poate teleporta la altă ușă de pe hartă."
+        },
+        "infrastructure_decay": {
+            "Name": "Degradarea infrastructurii",
+            "Description": "Rețeaua electrică cedează. Penele blochează temporar butoanele și întrerupătoarele electrice."
+        },
+        "normal": {
+            "Name": "Normal",
+            "Description": "Un raid normal fără eveniment Raid Roulette."
+        }
+    },
+    "Text": {
+        "Raid Event : {0}": "Eveniment de raid: {0}",
+        "It's arranged.": "S-a aranjat.",
+        "We're done here.": "Am terminat aici.",
+        "Another time, then.": "Atunci altă dată.",
+        "I will take that assignment.": "Accept misiunea.",
+        "The raid is over.": "Raidul s-a terminat.",
+        "Clear every wave.": "Învinge toate valurile.",
+        "Play one raid.": "Joacă un raid.",
+        "Enable Raid Roulette": "Activează Raid Roulette",
+        "Trader Event Activation": "Activare prin comerciant",
+        "Raid preset": "Presetare raid",
+        "Chance status": "Probabilități actuale",
+        "Normal raid chance (%)": "Șansa unui raid normal (%)",
+        "Custom event mix": "Combinație personalizată de evenimente",
+        "Enable all": "Activează toate",
+        "Disable all": "Dezactivează toate",
+        "Equal weights": "Ponderi egale",
+        "End run": "Încheie partida",
+        "Show raid event before raid": "Arată evenimentul înainte de raid",
+        "Show raid event after raid": "Arată evenimentul după raid",
+        "Mostly Normal": "În mare parte normal",
+        "Half And Half": "Jumătate-jumătate",
+        "Custom": "Personalizat",
+        "Event": "Eveniment",
+        "Did you hear that?": "Ai auzit asta?",
+        "....you're not dead": "....nu ești mort",
+        "you win": "ai câștigat",
+        "Random": "Aleatoriu",
+        "Weight": "Pondere",
+        "Search events": "Caută evenimente",
+        "0. General": "0. General",
+        "2. Raid chances": "2. Probabilități raid",
+        "6. Raid summary": "6. Rezumat raid",
+        "Enable events • Weight controls relative frequency": "Activează evenimente • Ponderea controlează frecvența relativă",
+        "Mostly_Normal": "În mare parte normal",
+        "Half_And_Half": "Jumătate-jumătate",
+        "Guard Trials": "Proba gărzilor",
+        "I Have A Shot": "Foc de alice",
+        "Snowball Trials": "Proba Bulgărelui"
+    }
+}

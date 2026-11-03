@@ -1,0 +1,222 @@
+{
+    "Language": "kr",
+    "Events": {
+        "boss_hunt": {
+            "Name": "보스의 추격",
+            "Description": "무작위 보스가 당신을 추적합니다."
+        },
+        "boss_convention": {
+            "Name": "보스 집회",
+            "Description": "여러 보스와 경호원이 같은 지도에 모입니다."
+        },
+        "high_value_loot": {
+            "Name": "잠긴 전리품",
+            "Description": "열쇠가 필요한 각 방에 고가품 1~3개가 있습니다."
+        },
+        "raider_assault": {
+            "Name": "레이더 습격",
+            "Description": "레이더가 일반 적을 대체합니다."
+        },
+        "cultist_invasion": {
+            "Name": "광신도 침공",
+            "Description": "광신도가 레이드를 점령합니다. 칼을 조심하세요."
+        },
+        "scav_concentrate": {
+            "Name": "Scav 집결",
+            "Description": "Scav가 무리 지어 돌아다닙니다."
+        },
+        "pmc_sweep": {
+            "Name": "PMC 소탕",
+            "Description": "USEC와 BEAR 부대가 일반 적을 대체합니다."
+        },
+        "get_handy": {
+            "Name": "권총전",
+            "Description": "Scav와 PMC가 권총과 섬광탄을 소지합니다."
+        },
+        "i_have_a_shot": {
+            "Name": "산탄총전",
+            "Description": "Scav와 PMC가 산탄총과 섬광탄을 소지합니다."
+        },
+        "marksman": {
+            "Name": "명사수",
+            "Description": "Scav와 PMC가 저격소총을 소지합니다."
+        },
+        "explosive_scav_units": {
+            "Name": "폭발성 Scav",
+            "Description": "Scav가 권총과 유탄발사기를 소지합니다."
+        },
+        "outbreak": {
+            "Name": "감염 확산",
+            "Description": "레이드 내내 감염자가 계속 나타납니다."
+        },
+        "geared": {
+            "Name": "중무장",
+            "Description": "적이 강력한 무기, 방어구와 위험한 탄약을 갖춥니다."
+        },
+        "guarded": {
+            "Name": "경호 구역",
+            "Description": "보스 경호원이 일반 적을 대체합니다."
+        },
+        "overloaded": {
+            "Name": "대용량",
+            "Description": "Scav와 PMC가 대용량 탄창을 사용합니다."
+        },
+        "matrix_glitch": {
+            "Name": "매트릭스 오류",
+            "Description": "전투원 무리가 같은 옷을 입습니다."
+        },
+        "no_safe_space": {
+            "Name": "안전지대 없음",
+            "Description": "보스를 포함한 모든 전투원이 당신을 추적합니다."
+        },
+        "posers_everywhere": {
+            "Name": "사칭꾼 천지",
+            "Description": "일반 전투원이 Killa의 장비를 착용합니다."
+        },
+        "fake_cult": {
+            "Name": "가짜 광신도",
+            "Description": "적은 광신도 옷을 입지만 기존 전투 방식을 유지합니다."
+        },
+        "overrun": {
+            "Name": "밀려오는 증원",
+            "Description": "전투원 수가 줄면 증원 부대가 손실을 보충합니다."
+        },
+        "clone_wars": {
+            "Name": "클론 전쟁",
+            "Description": "PMC가 당신의 외형과 시작 장비를 복제합니다."
+        },
+        "the_gift": {
+            "Name": "도둑",
+            "Description": "산타 모자를 쓴 도둑이 물자, 돈과 가끔 비트코인을 들고 다닙니다."
+        },
+        "smokers_lobby": {
+            "Name": "흡연 로비",
+            "Description": "적이 레이드 내내 연막탄을 던집니다."
+        },
+        "time_warp": {
+            "Name": "시간 왜곡",
+            "Description": "낮과 밤이 빠르게 바뀝니다. 레이드 제한 시간은 그대로입니다."
+        },
+        "schizophrenia": {
+            "Name": "조현병",
+            "Description": "목소리, 형체와 불가능한 광경이 레이드를 뒤흔듭니다."
+        },
+        "gun_game": {
+            "Name": "건 게임",
+            "Description": "유효한 처치마다 새 무기를 받습니다. 완주 보상은 비트코인입니다. 원래 무기는 우편으로 돌아옵니다."
+        },
+        "gun_game_respawns": {
+            "Name": "건 게임 [부활]",
+            "Description": "패배하면 완전히 회복한 상태로 권총을 들고 부활합니다. 무기 진행과 칼 보너스가 초기화됩니다."
+        },
+        "stormtide": {
+            "Name": "폭풍 해일",
+            "Description": "5분 안에 어두워집니다. 폭우가 다른 소리를 덮고 번개가 밤을 밝힙니다."
+        },
+        "ak50": {
+            "Name": "AK50",
+            "Description": "당신을 포함해 모두 AK-50을 받습니다. 원래 무기는 우편으로 돌아옵니다."
+        },
+        "grenadier": {
+            "Name": "척탄병",
+            "Description": "Scav와 PMC가 폭발 수류탄을 자주 던집니다."
+        },
+        "lab_work_day": {
+            "Name": "연구소 근무일",
+            "Description": "비무장 직원이 사무실 사이를 이동합니다. 방은 열려 있습니다. 직원 3명을 죽이면 레이더가 오고 경험치를 잃습니다."
+        },
+        "blue_day": {
+            "Name": "푸른 날",
+            "Description": "사이렌이 예측 불가능한 박격포 공격을 알립니다. 지붕 아래로 피하세요."
+        },
+        "snowball": {
+            "Name": "스노볼 시련",
+            "Description": "보스가 한 명씩 추격합니다. 목숨은 하나, 시간은 두 배이며 숨겨진 도전도 있습니다."
+        },
+        "trials": {
+            "Name": "시련",
+            "Description": "점점 강해지는 5인조가 10차례 공격합니다. 마지막 부대에 비트코인이 있습니다. 시간은 두 배입니다."
+        },
+        "extreme_trials": {
+            "Name": "극한 시련",
+            "Description": "동일한 보스 5명이 10차례 공격합니다. 매 부대의 최소 한 명이 비트코인 10개를 소지합니다. 시간은 두 배입니다."
+        },
+        "guard_trials": {
+            "Name": "경호원 시련",
+            "Description": "경호원 5인조와 싸우며 마지막은 혼합 부대입니다. 시간은 두 배입니다."
+        },
+        "total_trial": {
+            "Name": "종합 시련",
+            "Description": "5인조가 20차례 공격합니다. 모두 처치하면 다음 부대가 옵니다. 시간은 두 배입니다."
+        },
+        "spring": {
+            "Name": "봄",
+            "Description": "이번 레이드만 봄 풍경을 적용합니다."
+        },
+        "summer": {
+            "Name": "여름",
+            "Description": "이번 레이드만 여름 풍경을 적용합니다."
+        },
+        "autumn": {
+            "Name": "가을",
+            "Description": "이번 레이드만 가을 풍경을 적용합니다."
+        },
+        "winter": {
+            "Name": "겨울",
+            "Description": "지원되는 지도에서 이번 레이드만 눈 풍경을 적용합니다."
+        },
+        "wrong_door": {
+            "Name": "잘못된 문",
+            "Description": "열린 문을 통과하면 지도상의 다른 문으로 순간이동할 수 있습니다."
+        },
+        "infrastructure_decay": {
+            "Name": "기반 시설 노후화",
+            "Description": "전력망이 불안정해집니다. 정전 중에는 전기 버튼과 스위치를 일시적으로 사용할 수 없습니다."
+        },
+        "normal": {
+            "Name": "일반",
+            "Description": "Raid Roulette 이벤트가 없는 일반 레이드입니다."
+        }
+    },
+    "Text": {
+        "Raid Event : {0}": "레이드 이벤트: {0}",
+        "It's arranged.": "준비됐어.",
+        "We're done here.": "이제 끝났군.",
+        "Another time, then.": "그럼 다음에.",
+        "I will take that assignment.": "그 의뢰를 받겠습니다.",
+        "The raid is over.": "레이드가 끝났습니다.",
+        "Clear every wave.": "모든 부대를 처치하세요.",
+        "Play one raid.": "레이드를 한 번 진행하세요.",
+        "Enable Raid Roulette": "Raid Roulette 활성화",
+        "Trader Event Activation": "상인을 통한 이벤트 활성화",
+        "Raid preset": "레이드 사전 설정",
+        "Chance status": "현재 확률",
+        "Normal raid chance (%)": "일반 레이드 확률 (%)",
+        "Custom event mix": "이벤트 조합 사용자 지정",
+        "Enable all": "모두 활성화",
+        "Disable all": "모두 비활성화",
+        "Equal weights": "동일 가중치",
+        "End run": "도전 종료",
+        "Show raid event before raid": "레이드 전에 이벤트 표시",
+        "Show raid event after raid": "레이드 후에 이벤트 표시",
+        "Mostly Normal": "대부분 일반",
+        "Half And Half": "반반",
+        "Custom": "사용자 지정",
+        "Event": "이벤트",
+        "Did you hear that?": "방금 들었어?",
+        "....you're not dead": "....아직 안 죽었어",
+        "you win": "승리",
+        "Random": "무작위",
+        "Weight": "가중치",
+        "Search events": "이벤트 검색",
+        "0. General": "0. 일반",
+        "2. Raid chances": "2. 레이드 확률",
+        "6. Raid summary": "6. 레이드 요약",
+        "Enable events • Weight controls relative frequency": "이벤트 활성화 • 가중치는 상대 빈도를 조절합니다",
+        "Mostly_Normal": "대부분 일반",
+        "Half_And_Half": "반반",
+        "Guard Trials": "경호원 시련",
+        "I Have A Shot": "산탄총전",
+        "Snowball Trials": "스노볼 시련"
+    }
+}

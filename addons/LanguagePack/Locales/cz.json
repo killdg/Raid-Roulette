@@ -1,0 +1,222 @@
+{
+    "Language": "cz",
+    "Events": {
+        "boss_hunt": {
+            "Name": "Lov bosse",
+            "Description": "Náhodný boss vás pronásleduje."
+        },
+        "boss_convention": {
+            "Name": "Sraz bossů",
+            "Description": "Na mapě se sejde několik bossů a jejich stráže."
+        },
+        "high_value_loot": {
+            "Name": "Kořist pod zámkem",
+            "Description": "Každá místnost vyžadující klíč obsahuje jeden až tři cenné předměty."
+        },
+        "raider_assault": {
+            "Name": "Útok Raiderů",
+            "Description": "Raideři nahradí běžné nepřátele."
+        },
+        "cultist_invasion": {
+            "Name": "Invaze kultistů",
+            "Description": "Nájezd ovládli kultisté. Pozor na jejich nože."
+        },
+        "scav_concentrate": {
+            "Name": "Shromáždění Scavů",
+            "Description": "Scavové se pohybují ve skupinách."
+        },
+        "pmc_sweep": {
+            "Name": "Zátah PMC",
+            "Description": "Skupiny USEC a BEAR nahradí běžné nepřátele."
+        },
+        "get_handy": {
+            "Name": "Pistolníci",
+            "Description": "Scavové a PMC mají pistole a oslepující granáty."
+        },
+        "i_have_a_shot": {
+            "Name": "Broková rána",
+            "Description": "Scavové a PMC mají brokovnice a oslepující granáty."
+        },
+        "marksman": {
+            "Name": "Odstřelovač",
+            "Description": "Scavové a PMC mají odstřelovací pušky."
+        },
+        "explosive_scav_units": {
+            "Name": "Výbušní Scavové",
+            "Description": "Scavové mají pistole a granátomety."
+        },
+        "outbreak": {
+            "Name": "Nákaza",
+            "Description": "Během nájezdu stále přicházejí nakažení."
+        },
+        "geared": {
+            "Name": "Dobře vybavení",
+            "Description": "Nepřátelé mají silné zbraně, pancíře a nebezpečnou munici."
+        },
+        "guarded": {
+            "Name": "Pod stráží",
+            "Description": "Stráže bossů nahradí běžné nepřátele."
+        },
+        "overloaded": {
+            "Name": "Přetížení",
+            "Description": "Scavové a PMC mají velkokapacitní zásobníky."
+        },
+        "matrix_glitch": {
+            "Name": "Chyba Matrixu",
+            "Description": "Skupiny bojovníků nosí stejné oblečení."
+        },
+        "no_safe_space": {
+            "Name": "Nikde není bezpečno",
+            "Description": "Všichni bojovníci včetně bossů sledují vaši polohu."
+        },
+        "posers_everywhere": {
+            "Name": "Samí napodobitelé",
+            "Description": "Běžní bojovníci nosí Killovu výstroj."
+        },
+        "fake_cult": {
+            "Name": "Falešný kult",
+            "Description": "Nepřátelé vypadají jako kultisté, ale bojují obvyklým způsobem."
+        },
+        "overrun": {
+            "Name": "Přesila",
+            "Description": "Když počet bojovníků klesne, ztráty doplní posily."
+        },
+        "clone_wars": {
+            "Name": "Válka klonů",
+            "Description": "PMC kopírují váš vzhled a počáteční výstroj."
+        },
+        "the_gift": {
+            "Name": "Zloděj",
+            "Description": "Zloděj ve vánoční čepici nese zásoby, peníze a někdy bitcoiny."
+        },
+        "smokers_lobby": {
+            "Name": "Kuřácká lobby",
+            "Description": "Nepřátelé po celý nájezd házejí kouřové granáty."
+        },
+        "time_warp": {
+            "Name": "Časová deformace",
+            "Description": "Den a noc rychle ubíhají. Odpočet nájezdu zůstává normální."
+        },
+        "schizophrenia": {
+            "Name": "Schizofrenie",
+            "Description": "Nájezd narušují hlasy, postavy a nemožné výjevy."
+        },
+        "gun_game": {
+            "Name": "Závod ve zbraních",
+            "Description": "Každé platné zabití přinese další zbraň. Vyhrajte bitcoin; původní zbraně se vrátí poštou."
+        },
+        "gun_game_respawns": {
+            "Name": "Závod ve zbraních [Oživení]",
+            "Description": "Po porážce se vrátíte zdraví s pistolí. Postup i bonus za nůž se vynulují."
+        },
+        "stormtide": {
+            "Name": "Bouřlivý příliv",
+            "Description": "Do pěti minut se setmí. Liják přehluší zvuky a blesky osvítí noc."
+        },
+        "ak50": {
+            "Name": "AK50",
+            "Description": "Všichni včetně vás dostanou AK-50. Původní zbraně se vrátí poštou."
+        },
+        "grenadier": {
+            "Name": "Granátník",
+            "Description": "Scavové a PMC často házejí výbušné granáty."
+        },
+        "lab_work_day": {
+            "Name": "Pracovní den v laboratoři",
+            "Description": "Neozbrojení zaměstnanci se pohybují mezi kancelářemi. Místnosti jsou otevřené; zabití tří zaměstnanců přivolá Raidery a stojí zkušenosti."
+        },
+        "blue_day": {
+            "Name": "Modrý den",
+            "Description": "Siréna varuje před nepředvídatelnou minometnou palbou. Najděte střechu."
+        },
+        "snowball": {
+            "Name": "Sněhová zkouška",
+            "Description": "Bossové vás loví jeden po druhém. Jeden život, dvojnásobný čas a skrytá výzva."
+        },
+        "trials": {
+            "Name": "Zkoušky",
+            "Description": "Deset vln pěti stále silnějších lovců. Poslední vlna má bitcoin; dvojnásobný čas."
+        },
+        "extreme_trials": {
+            "Name": "Extrémní zkoušky",
+            "Description": "Deset vln pěti stejných bossů. Jeden člen každé vlny má deset bitcoinů; dvojnásobný čas."
+        },
+        "guard_trials": {
+            "Name": "Zkouška stráží",
+            "Description": "Bojujte s pětičlennými skupinami stráží a závěrečnou smíšenou skupinou. Dvojnásobný čas."
+        },
+        "total_trial": {
+            "Name": "Úplná zkouška",
+            "Description": "Dvacet vln pěti lovců. Pro postup zabijte celou skupinu; dvojnásobný čas."
+        },
+        "spring": {
+            "Name": "Jaro",
+            "Description": "Jarní krajina pouze pro tento nájezd."
+        },
+        "summer": {
+            "Name": "Léto",
+            "Description": "Letní krajina pouze pro tento nájezd."
+        },
+        "autumn": {
+            "Name": "Podzim",
+            "Description": "Podzimní barvy pouze pro tento nájezd."
+        },
+        "winter": {
+            "Name": "Zima",
+            "Description": "Sníh na podporovaných mapách pouze pro tento nájezd."
+        },
+        "wrong_door": {
+            "Name": "Špatné dveře",
+            "Description": "Průchod otevřenými dveřmi vás může teleportovat k jiným dveřím na mapě."
+        },
+        "infrastructure_decay": {
+            "Name": "Úpadek infrastruktury",
+            "Description": "Elektrická síť selhává. Výpadky dočasně blokují elektrická tlačítka a vypínače."
+        },
+        "normal": {
+            "Name": "Normální",
+            "Description": "Běžný nájezd bez události Raid Roulette."
+        }
+    },
+    "Text": {
+        "Raid Event : {0}": "Událost nájezdu: {0}",
+        "It's arranged.": "Je to zařízené.",
+        "We're done here.": "Tady jsme skončili.",
+        "Another time, then.": "Tak někdy jindy.",
+        "I will take that assignment.": "Beru tu zakázku.",
+        "The raid is over.": "Nájezd skončil.",
+        "Clear every wave.": "Dokončete všechny vlny.",
+        "Play one raid.": "Odehrajte jeden nájezd.",
+        "Enable Raid Roulette": "Zapnout Raid Roulette",
+        "Trader Event Activation": "Aktivace u obchodníka",
+        "Raid preset": "Předvolba nájezdů",
+        "Chance status": "Aktuální šance",
+        "Normal raid chance (%)": "Šance na normální nájezd (%)",
+        "Custom event mix": "Vlastní směs událostí",
+        "Enable all": "Zapnout vše",
+        "Disable all": "Vypnout vše",
+        "Equal weights": "Stejné váhy",
+        "End run": "Ukončit pokus",
+        "Show raid event before raid": "Zobrazit událost před nájezdem",
+        "Show raid event after raid": "Zobrazit událost po nájezdu",
+        "Mostly Normal": "Většinou normální",
+        "Half And Half": "Půl na půl",
+        "Custom": "Vlastní",
+        "Event": "Událost",
+        "Did you hear that?": "Slyšeli jste to?",
+        "....you're not dead": "....nejste mrtví",
+        "you win": "vítězství",
+        "Random": "Náhodné",
+        "Weight": "Váha",
+        "Search events": "Hledat události",
+        "0. General": "0. Obecné",
+        "2. Raid chances": "2. Šance nájezdů",
+        "6. Raid summary": "6. Shrnutí nájezdu",
+        "Enable events • Weight controls relative frequency": "Zapněte události • Váha řídí relativní četnost",
+        "Mostly_Normal": "Většinou normální",
+        "Half_And_Half": "Půl na půl",
+        "Guard Trials": "Zkouška stráží",
+        "I Have A Shot": "Broková rána",
+        "Snowball Trials": "Sněhová zkouška"
+    }
+}

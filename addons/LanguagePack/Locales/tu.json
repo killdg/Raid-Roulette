@@ -1,0 +1,222 @@
+{
+    "Language": "tu",
+    "Events": {
+        "boss_hunt": {
+            "Name": "Boss Takibi",
+            "Description": "Rastgele bir boss seni avlar."
+        },
+        "boss_convention": {
+            "Name": "Boss Toplantısı",
+            "Description": "Birden fazla boss ve muhafızları aynı haritada toplanır."
+        },
+        "high_value_loot": {
+            "Name": "Kilitli Ganimet",
+            "Description": "Anahtar gerektiren her odada bir ila üç değerli eşya bulunur."
+        },
+        "raider_assault": {
+            "Name": "Raider Saldırısı",
+            "Description": "Raider'lar normal düşmanların yerini alır."
+        },
+        "cultist_invasion": {
+            "Name": "Tarikatçı İstilası",
+            "Description": "Tarikatçılar baskını ele geçirir. Bıçaklarına dikkat et."
+        },
+        "scav_concentrate": {
+            "Name": "Scav Toplanması",
+            "Description": "Scav'ler gruplar halinde dolaşır."
+        },
+        "pmc_sweep": {
+            "Name": "PMC Taraması",
+            "Description": "USEC ve BEAR grupları normal düşmanların yerini alır."
+        },
+        "get_handy": {
+            "Name": "Tabanca Zamanı",
+            "Description": "Scav ve PMC'ler tabanca ve flaş bombası taşır."
+        },
+        "i_have_a_shot": {
+            "Name": "Saçma Yağmuru",
+            "Description": "Scav ve PMC'ler pompalı tüfek ve flaş bombası taşır."
+        },
+        "marksman": {
+            "Name": "Keskin Nişancı",
+            "Description": "Scav ve PMC'ler keskin nişancı tüfeği taşır."
+        },
+        "explosive_scav_units": {
+            "Name": "Patlayıcı Scav'ler",
+            "Description": "Scav'ler tabanca ve bombaatar taşır."
+        },
+        "outbreak": {
+            "Name": "Salgın",
+            "Description": "Baskın boyunca enfekte düşmanlar gelmeye devam eder."
+        },
+        "geared": {
+            "Name": "Donanımlı",
+            "Description": "Düşmanlar güçlü silah, zırh ve tehlikeli mühimmat taşır."
+        },
+        "guarded": {
+            "Name": "Muhafızlı",
+            "Description": "Boss muhafızları normal düşmanların yerini alır."
+        },
+        "overloaded": {
+            "Name": "Aşırı Dolu",
+            "Description": "Scav ve PMC'ler yüksek kapasiteli şarjörler kullanır."
+        },
+        "matrix_glitch": {
+            "Name": "Matrix Hatası",
+            "Description": "Savaşçı grupları aynı kıyafetleri giyer."
+        },
+        "no_safe_space": {
+            "Name": "Güvenli Yer Yok",
+            "Description": "Bosslar dahil tüm savaşçılar konumunu takip eder."
+        },
+        "posers_everywhere": {
+            "Name": "Her Yerde Taklitçi",
+            "Description": "Normal savaşçılar Killa'nın teçhizatını giyer."
+        },
+        "fake_cult": {
+            "Name": "Sahte Tarikat",
+            "Description": "Düşmanlar tarikatçı gibi giyinir ama normal savaş biçimlerini korur."
+        },
+        "overrun": {
+            "Name": "İstila",
+            "Description": "Savaşçı sayısı düşünce takviye ekipleri kayıpları tamamlar."
+        },
+        "clone_wars": {
+            "Name": "Klon Savaşları",
+            "Description": "PMC'ler görünüşünü ve başlangıç teçhizatını kopyalar."
+        },
+        "the_gift": {
+            "Name": "Hırsız",
+            "Description": "Noel şapkalı bir hırsız erzak, para ve bazen bitcoin taşır."
+        },
+        "smokers_lobby": {
+            "Name": "Sigara Lobisi",
+            "Description": "Düşmanlar baskın boyunca sis bombası atar."
+        },
+        "time_warp": {
+            "Name": "Zaman Bükülmesi",
+            "Description": "Gece ve gündüz hızla geçer. Baskın sayacı normal kalır."
+        },
+        "schizophrenia": {
+            "Name": "Şizofreni",
+            "Description": "Sesler, siluetler ve imkânsız görüntüler baskını bozar."
+        },
+        "gun_game": {
+            "Name": "Silah Oyunu",
+            "Description": "Her geçerli öldürme yeni silah verir. Kazanınca bitcoin alırsın; asıl silahların postayla döner."
+        },
+        "gun_game_respawns": {
+            "Name": "Silah Oyunu [Yeniden Doğma]",
+            "Description": "Yenilgiden sonra tam sağlıkla ve tabancayla dönersin. İlerleme ve bıçak bonusu sıfırlanır."
+        },
+        "stormtide": {
+            "Name": "Fırtına Dalgası",
+            "Description": "Beş dakika içinde kararır. Şiddetli yağmur sesleri örter, şimşekler geceyi aydınlatır."
+        },
+        "ak50": {
+            "Name": "AK50",
+            "Description": "Sen dahil herkes AK-50 alır. Asıl silahların postayla döner."
+        },
+        "grenadier": {
+            "Name": "Bombacı",
+            "Description": "Scav ve PMC'ler sık sık patlayıcı el bombası atar."
+        },
+        "lab_work_day": {
+            "Name": "Laboratuvarda İş Günü",
+            "Description": "Silahsız çalışanlar ofisler arasında dolaşır. Odalar açıktır; üç çalışanı öldürmek Raider çağırır ve deneyim kaybettirir."
+        },
+        "blue_day": {
+            "Name": "Mavi Gün",
+            "Description": "Siren, öngörülemeyen havan saldırılarını haber verir. Çatı altına sığın."
+        },
+        "snowball": {
+            "Name": "Kartopu Sınavı",
+            "Description": "Bosslar seni sırayla avlar. Tek can, iki kat süre ve gizli bir meydan okuma."
+        },
+        "trials": {
+            "Name": "Sınavlar",
+            "Description": "Gittikçe güçlenen beşer avcıdan on dalga. Son dalgada bitcoin vardır; süre iki katıdır."
+        },
+        "extreme_trials": {
+            "Name": "Ekstrem Sınavlar",
+            "Description": "Beşer aynı bosstan on dalga. Her dalganın en az bir üyesinde on bitcoin vardır; süre iki katıdır."
+        },
+        "guard_trials": {
+            "Name": "Muhafız Sınavı",
+            "Description": "Beş kişilik muhafız ekipleri ve son karma ekiple savaş. Süre iki katıdır."
+        },
+        "total_trial": {
+            "Name": "Tam Sınav",
+            "Description": "Beşer avcıdan yirmi dalga. İlerlemek için tüm ekibi öldür; süre iki katıdır."
+        },
+        "spring": {
+            "Name": "İlkbahar",
+            "Description": "Yalnızca bu baskın için ilkbahar manzarası."
+        },
+        "summer": {
+            "Name": "Yaz",
+            "Description": "Yalnızca bu baskın için yaz manzarası."
+        },
+        "autumn": {
+            "Name": "Sonbahar",
+            "Description": "Yalnızca bu baskın için sonbahar renkleri."
+        },
+        "winter": {
+            "Name": "Kış",
+            "Description": "Desteklenen haritalarda yalnızca bu baskın için kar manzarası."
+        },
+        "wrong_door": {
+            "Name": "Yanlış Kapı",
+            "Description": "Açık bir kapıdan geçmek seni haritadaki başka bir kapıya ışınlayabilir."
+        },
+        "infrastructure_decay": {
+            "Name": "Altyapı Çöküşü",
+            "Description": "Elektrik şebekesi aksar. Kesintiler elektrikli düğme ve anahtarları geçici olarak devre dışı bırakır."
+        },
+        "normal": {
+            "Name": "Normal",
+            "Description": "Raid Roulette etkinliği olmayan normal bir baskın."
+        }
+    },
+    "Text": {
+        "Raid Event : {0}": "Baskın Etkinliği: {0}",
+        "It's arranged.": "Ayarlandı.",
+        "We're done here.": "Burada işimiz bitti.",
+        "Another time, then.": "O zaman başka sefere.",
+        "I will take that assignment.": "Bu görevi alıyorum.",
+        "The raid is over.": "Baskın bitti.",
+        "Clear every wave.": "Tüm dalgaları temizle.",
+        "Play one raid.": "Bir baskın oyna.",
+        "Enable Raid Roulette": "Raid Roulette'i etkinleştir",
+        "Trader Event Activation": "Tüccardan Etkinlik Başlatma",
+        "Raid preset": "Baskın ön ayarı",
+        "Chance status": "Güncel olasılıklar",
+        "Normal raid chance (%)": "Normal baskın şansı (%)",
+        "Custom event mix": "Özel etkinlik karışımı",
+        "Enable all": "Tümünü etkinleştir",
+        "Disable all": "Tümünü devre dışı bırak",
+        "Equal weights": "Eşit ağırlıklar",
+        "End run": "Koşuyu bitir",
+        "Show raid event before raid": "Baskından önce etkinliği göster",
+        "Show raid event after raid": "Baskından sonra etkinliği göster",
+        "Mostly Normal": "Çoğunlukla Normal",
+        "Half And Half": "Yarı Yarıya",
+        "Custom": "Özel",
+        "Event": "Etkinlik",
+        "Did you hear that?": "Bunu duydun mu?",
+        "....you're not dead": "....ölmedin",
+        "you win": "kazandın",
+        "Random": "Rastgele",
+        "Weight": "Ağırlık",
+        "Search events": "Etkinlik ara",
+        "0. General": "0. Genel",
+        "2. Raid chances": "2. Baskın olasılıkları",
+        "6. Raid summary": "6. Baskın özeti",
+        "Enable events • Weight controls relative frequency": "Etkinlikleri aç • Ağırlık göreli sıklığı belirler",
+        "Mostly_Normal": "Çoğunlukla Normal",
+        "Half_And_Half": "Yarı Yarıya",
+        "Guard Trials": "Muhafız Sınavı",
+        "I Have A Shot": "Saçma Yağmuru",
+        "Snowball Trials": "Kartopu Sınavı"
+    }
+}

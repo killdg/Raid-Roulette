@@ -1,0 +1,222 @@
+{
+    "Language": "hu",
+    "Events": {
+        "boss_hunt": {
+            "Name": "Főnökvadászat",
+            "Description": "Egy véletlenszerű főnök üldöz téged."
+        },
+        "boss_convention": {
+            "Name": "Főnöktalálkozó",
+            "Description": "Több főnök és őreik gyűlnek össze a pályán."
+        },
+        "high_value_loot": {
+            "Name": "Zárt zsákmány",
+            "Description": "Minden kulccsal zárt szobában egy–három értékes tárgy található."
+        },
+        "raider_assault": {
+            "Name": "Raider-roham",
+            "Description": "Raiderek váltják fel a szokásos ellenfeleket."
+        },
+        "cultist_invasion": {
+            "Name": "Kultistainvázió",
+            "Description": "Kultisták lepik el a rajtaütést. Vigyázz a késeikre."
+        },
+        "scav_concentrate": {
+            "Name": "Scav-gyülekező",
+            "Description": "A Scavek csoportosan járőröznek."
+        },
+        "pmc_sweep": {
+            "Name": "PMC-tisztogatás",
+            "Description": "USEC- és BEAR-csoportok váltják fel a szokásos ellenfeleket."
+        },
+        "get_handy": {
+            "Name": "Pisztolyra fel",
+            "Description": "A Scavek és PMC-k pisztolyt és villanógránátot visznek."
+        },
+        "i_have_a_shot": {
+            "Name": "Sörétes idő",
+            "Description": "A Scavek és PMC-k sörétest és villanógránátot visznek."
+        },
+        "marksman": {
+            "Name": "Mesterlövész",
+            "Description": "A Scavek és PMC-k mesterlövészpuskát visznek."
+        },
+        "explosive_scav_units": {
+            "Name": "Robbanékony Scavek",
+            "Description": "A Scavek pisztolyt és gránátvetőt visznek."
+        },
+        "outbreak": {
+            "Name": "Járvány",
+            "Description": "A rajtaütés során újabb fertőzöttek érkeznek."
+        },
+        "geared": {
+            "Name": "Jól felszerelve",
+            "Description": "Az ellenfelek erős fegyvert, páncélt és veszélyes lőszert kapnak."
+        },
+        "guarded": {
+            "Name": "Őrizet alatt",
+            "Description": "Főnökőrök váltják fel a szokásos ellenfeleket."
+        },
+        "overloaded": {
+            "Name": "Túltöltve",
+            "Description": "A Scavek és PMC-k nagy kapacitású tárakat használnak."
+        },
+        "matrix_glitch": {
+            "Name": "Mátrixhiba",
+            "Description": "Harcoscsoportok ugyanolyan ruhát viselnek."
+        },
+        "no_safe_space": {
+            "Name": "Nincs biztonságos hely",
+            "Description": "Minden harcos, a főnökök is, követi a helyzetedet."
+        },
+        "posers_everywhere": {
+            "Name": "Mindenütt utánzók",
+            "Description": "Közönséges harcosok viselik Killa felszerelését."
+        },
+        "fake_cult": {
+            "Name": "Hamis kultusz",
+            "Description": "Az ellenfelek kultistának öltöznek, de a megszokott módon harcolnak."
+        },
+        "overrun": {
+            "Name": "Túlerő",
+            "Description": "Ha csökken a harcosok száma, erősítés pótolja a veszteségeket."
+        },
+        "clone_wars": {
+            "Name": "Klónháború",
+            "Description": "A PMC-k lemásolják a külsődet és kezdőfelszerelésedet."
+        },
+        "the_gift": {
+            "Name": "A tolvaj",
+            "Description": "Egy mikulássapkás tolvaj készleteket, pénzt és néha bitcoint cipel."
+        },
+        "smokers_lobby": {
+            "Name": "Dohányzólobbi",
+            "Description": "Az ellenfelek a rajtaütés végéig füstgránátokat dobálnak."
+        },
+        "time_warp": {
+            "Name": "Időtorzulás",
+            "Description": "Gyorsan váltakozik nappal és éjszaka. A visszaszámlálás normális marad."
+        },
+        "schizophrenia": {
+            "Name": "Skizofrénia",
+            "Description": "Hangok, alakok és lehetetlen látomások zavarják meg a rajtaütést."
+        },
+        "gun_game": {
+            "Name": "Fegyververseny",
+            "Description": "Minden érvényes ölés új fegyvert ad. A győzelem bitcoin; eredeti fegyvereid postán visszajönnek."
+        },
+        "gun_game_respawns": {
+            "Name": "Fegyververseny [Újjáéledés]",
+            "Description": "Vereség után teljes életerővel és pisztollyal térsz vissza. A haladás és a késbónusz nullázódik."
+        },
+        "stormtide": {
+            "Name": "Viharhullám",
+            "Description": "Öt percen belül besötétedik. A zápor elnyomja a hangokat, villámok világítanak."
+        },
+        "ak50": {
+            "Name": "AK50",
+            "Description": "Mindenki AK-50-et kap, te is. Eredeti fegyvereid postán visszajönnek."
+        },
+        "grenadier": {
+            "Name": "Gránátos",
+            "Description": "A Scavek és PMC-k sok robbanógránátot dobnak."
+        },
+        "lab_work_day": {
+            "Name": "Laboratóriumi munkanap",
+            "Description": "Fegyvertelen dolgozók járnak az irodák között. A szobák nyitva; három dolgozó megölése Raidert hív és tapasztalatba kerül."
+        },
+        "blue_day": {
+            "Name": "Kék nap",
+            "Description": "Sziréna jelzi a kiszámíthatatlan aknavetőtüzet. Keress tetőt."
+        },
+        "snowball": {
+            "Name": "Hógolyópróba",
+            "Description": "A főnökök egyenként vadásznak rád. Egy élet, dupla idő és rejtett kihívás."
+        },
+        "trials": {
+            "Name": "Próbák",
+            "Description": "Tíz hullám, egyenként öt erősödő vadásszal. Az utolsó hullámban bitcoin van; dupla idő."
+        },
+        "extreme_trials": {
+            "Name": "Extrém próbák",
+            "Description": "Tíz hullám, egyenként öt azonos főnökkel. Minden hullám egy tagjánál tíz bitcoin van; dupla idő."
+        },
+        "guard_trials": {
+            "Name": "Őrpróba",
+            "Description": "Ötfős őrcsoportok és egy végső vegyes csapat ellen harcolsz. Dupla idő."
+        },
+        "total_trial": {
+            "Name": "Teljes próba",
+            "Description": "Húsz hullám, egyenként öt vadásszal. A következőhöz mindenkit ölj meg; dupla idő."
+        },
+        "spring": {
+            "Name": "Tavasz",
+            "Description": "Tavaszi táj csak erre a rajtaütésre."
+        },
+        "summer": {
+            "Name": "Nyár",
+            "Description": "Nyári táj csak erre a rajtaütésre."
+        },
+        "autumn": {
+            "Name": "Ősz",
+            "Description": "Őszi színek csak erre a rajtaütésre."
+        },
+        "winter": {
+            "Name": "Tél",
+            "Description": "Havas táj a támogatott pályákon, csak erre a rajtaütésre."
+        },
+        "wrong_door": {
+            "Name": "Rossz ajtó",
+            "Description": "Egy nyitott ajtón áthaladva a pálya másik ajtajához teleportálhatsz."
+        },
+        "infrastructure_decay": {
+            "Name": "Infrastruktúra-hanyatlás",
+            "Description": "Az elektromos hálózat akadozik. Áramszünetkor a villamos gombok és kapcsolók átmenetileg nem működnek."
+        },
+        "normal": {
+            "Name": "Normál",
+            "Description": "Normál rajtaütés Raid Roulette-esemény nélkül."
+        }
+    },
+    "Text": {
+        "Raid Event : {0}": "Rajtaütési esemény: {0}",
+        "It's arranged.": "Elintézve.",
+        "We're done here.": "Itt végeztünk.",
+        "Another time, then.": "Akkor máskor.",
+        "I will take that assignment.": "Elvállalom a megbízást.",
+        "The raid is over.": "A rajtaütés véget ért.",
+        "Clear every wave.": "Teljesíts minden hullámot.",
+        "Play one raid.": "Játssz egy rajtaütést.",
+        "Enable Raid Roulette": "Raid Roulette engedélyezése",
+        "Trader Event Activation": "Kereskedői eseményindítás",
+        "Raid preset": "Rajtaütési előbeállítás",
+        "Chance status": "Aktuális esélyek",
+        "Normal raid chance (%)": "Normál rajtaütés esélye (%)",
+        "Custom event mix": "Egyéni eseménykeverék",
+        "Enable all": "Mind engedélyezése",
+        "Disable all": "Mind letiltása",
+        "Equal weights": "Egyenlő súlyok",
+        "End run": "Menet befejezése",
+        "Show raid event before raid": "Esemény megjelenítése rajtaütés előtt",
+        "Show raid event after raid": "Esemény megjelenítése rajtaütés után",
+        "Mostly Normal": "Többnyire normál",
+        "Half And Half": "Fele-fele",
+        "Custom": "Egyéni",
+        "Event": "Esemény",
+        "Did you hear that?": "Hallottad ezt?",
+        "....you're not dead": "....nem vagy halott",
+        "you win": "győztél",
+        "Random": "Véletlen",
+        "Weight": "Súly",
+        "Search events": "Események keresése",
+        "0. General": "0. Általános",
+        "2. Raid chances": "2. Rajtaütési esélyek",
+        "6. Raid summary": "6. Rajtaütési összegzés",
+        "Enable events • Weight controls relative frequency": "Események engedélyezése • A súly a relatív gyakoriságot szabályozza",
+        "Mostly_Normal": "Többnyire normál",
+        "Half_And_Half": "Fele-fele",
+        "Guard Trials": "Őrpróba",
+        "I Have A Shot": "Sörétes idő",
+        "Snowball Trials": "Hógolyópróba"
+    }
+}
