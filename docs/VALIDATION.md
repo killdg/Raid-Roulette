@@ -1,6 +1,6 @@
 # Validation and release status
 
-Current candidate: client **2.0.144**, backend **2.0.0-preview.68**, SPT **4.1.6**. Tests are confined to a dedicated solo installation. Results below distinguish user observations from automated verification; they are not exhaustive compatibility guarantees.
+Public beta: client **2.0.144**, backend **2.0.0-preview.68**, SPT **4.1.6**. Tests are confined to a dedicated solo installation. Results below distinguish user observations from automated verification; they are not exhaustive compatibility guarantees.
 
 ## Player-confirmed observations
 

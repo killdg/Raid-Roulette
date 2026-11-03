@@ -6,7 +6,9 @@
 
 Keep your usual raids—or let something unexpected take over. Raid Roulette adds themed opposition, unusual loot, weather, hallucinations and wave challenges to **SPT 4.1.6**.
 
-> **Release preparation is in progress.** Current solo candidate: client **2.0.144**, server **2.0.0-preview.68**. Some events have player-confirmed tests; others still need final checks. This repository is a development snapshot, not a claim that every event is release-ready. See [testing status](docs/VALIDATION.md).
+> **Public beta:** client **2.0.144**, server **2.0.0-preview.68**, for **SPT 4.1.6**. Some events have player-confirmed tests; others still need final checks. Please report problems through [Issues](https://github.com/killdg/Raid-Roulette/issues). See [testing status](docs/VALIDATION.md).
+
+**[Download the full beta package](https://github.com/killdg/Raid-Roulette/releases/download/v2.0.144-beta/Raid-Roulette-2.0.144.zip)** · [Release notes and matching source](https://github.com/killdg/Raid-Roulette/releases/tag/v2.0.144-beta)
 
 ## About this project
 
@@ -57,7 +59,7 @@ Read the [short event guide](docs/Event-Overview.md) or [expand individual event
 
 ## Installation
 
-Close the game and SPT server. Extract the eventual release ZIP into the **SPT installation root**, merging:
+Close the game and SPT server. Extract the beta installer ZIP into the **SPT installation root**, merging:
 
 ```text
 README.md
@@ -84,7 +86,7 @@ The optional **DG Testing Tools** package exposes developer diagnostics. Ordinar
 
 [Build instructions](docs/BUILDING.md) · [Engine overview](docs/ARCHITECTURE.md) · [Data scope](docs/DATA-SCOPE.md) · [Testing status](docs/VALIDATION.md)
 
-Source uses conventional readable C#, with comments around unusual engine integration. No obfuscation or minification is used. Game/SPT binaries, decompiled game source, profiles and credentials must not be uploaded. Future download releases must be built from the exact tagged source and carry checksums and build provenance; no final download is being published as part of this preparation.
+Source uses conventional readable C#, with comments around unusual engine integration. No obfuscation or minification is used. Game/SPT binaries, decompiled game source, profiles and credentials must not be uploaded. Download releases are built from the exact tagged source and carry checksums and build provenance. This release is a beta, not a guarantee that every event or mod combination is fully verified.
 
 ## Credits
 
