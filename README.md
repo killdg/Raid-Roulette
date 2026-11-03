@@ -8,6 +8,14 @@ Keep your usual raids—or let something unexpected take over. Raid Roulette add
 
 > **Release preparation is in progress.** Current solo candidate: client **2.0.144**, server **2.0.0-preview.68**. Some events have player-confirmed tests; others still need final checks. This repository is a development snapshot, not a claim that every event is release-ready. See [testing status](docs/VALIDATION.md).
 
+## About this project
+
+Raid Roulette is an experiment in how far we can push SPT and its engine to create unusual, varied raids. These events also explore ideas and engine interactions for future **quest packs** I intend to build.
+
+Please report anything that does not work as expected through the **Issues** tab. Include the event, map, installed versions, what happened and any other mods you use; share only relevant, redacted log excerpts.
+
+I will investigate reported conflicts with other mods where I can, but **compatibility with every mod cannot be promised**. **SAIN and Fika** are specific compatibility goals I intend to spend time on. Full compatibility is the aim, not a claim that it has already been achieved. The current main edition remains a solo build.
+
 ## Two ways to play
 
 ### Let events happen naturally

@@ -14,3 +14,4 @@ Release file: not finalized; do not attach an older ZIP or the source archive.
 F1 menu provider: existing Configuration Manager, not bundled by this mod.
 Artwork: assets/raid-roulette-cover.png (user-approved cover); upload copy assets/raid-roulette-thumbnail.jpg.
 Publication date: leave unset until reviewed.
+Enable Issues: ON for this and all future mod submissions.

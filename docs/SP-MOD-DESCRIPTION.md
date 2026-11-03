@@ -6,6 +6,14 @@ Choose how often normal raids give way to unusual enemies, weather, loot and cha
 
 {.is-info}
 
+## About this project
+
+Raid Roulette is an experiment in how far we can push SPT and its engine to create unusual, varied raids. These events also explore ideas and engine interactions for future **quest packs** I intend to build.
+
+Please report anything that does not work as expected through the **Issues** tab. Include the event, map, installed versions, what happened and any other mods you use; share only relevant, redacted log excerpts.
+
+I will investigate reported conflicts with other mods where I can, but **compatibility with every mod cannot be promised**. **SAIN and Fika** are specific compatibility goals I intend to spend time on. Full compatibility is the aim, not a claim that it has already been achieved. The current main edition remains a solo build.
+
 ## Explore Raid Roulette {.tabset}
 
 ### How to play
