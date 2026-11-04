@@ -13,7 +13,7 @@ using UnityEngine;
 
 namespace RaidRoulette.LanguagePackClient
 {
-    [BepInPlugin("com.killdg.raidroulette.languages.client", "Raid Roulette Language Pack", "1.0.0")]
+    [BepInPlugin("com.killdg.raidroulette.languages.client", "Raid Roulette Language Pack", "1.0.1")]
     [BepInDependency("com.killdg.raidroulette.testing", "2.0.146")]
     public sealed class Plugin : BaseUnityPlugin
     {
@@ -188,9 +188,13 @@ namespace RaidRoulette.LanguagePackClient
             }
         }
 
-        private static void SettingPostfix(object __instance, ConfigEntryBase entry, BaseUnityPlugin owner)
+        private static void SettingPostfix(object __instance, ConfigEntryBase entry, BaseUnityPlugin? owner)
         {
-            if (owner.Info.Metadata.GUID != "com.killdg.raidroulette.testing" || Language == "en")
+            // Configuration Manager also constructs rows for BepInEx's core
+            // configuration with owner == null. Those are not RR settings and
+            // must pass through, including when the selected language is English.
+            // Never let an optional translation interrupt the global settings list.
+            if (Language == "en" || owner?.Info?.Metadata?.GUID != "com.killdg.raidroulette.testing")
             {
                 return;
             }

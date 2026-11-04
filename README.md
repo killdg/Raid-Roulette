@@ -86,7 +86,7 @@ The optional **DG Testing Tools** package exposes developer diagnostics. Ordinar
 
 ## Optional language pack
 
-The main Raid Roulette download uses English. Players who want translations can install the **[separate optional Language Pack](https://github.com/killdg/Raid-Roulette/releases/tag/language-pack-v1.0.0)** alongside RR 2.0.146. It follows the game language and includes 16 additional languages for Fence assignments, event names and main menu controls, with English fallback. It is not bundled into the main installer.
+The main Raid Roulette download uses English. Players who want translations can install the **[separate optional Language Pack](https://github.com/killdg/Raid-Roulette/releases/tag/language-pack-v1.0.1)** alongside RR 2.0.146. It follows the game language and includes 16 additional languages for Fence assignments, event names and main menu controls, with English fallback. It is not bundled into the main installer.
 
 Translations are a first pass; some help, diagnostic and dynamic text remains English. See the [language-pack source and coverage notes](addons/LanguagePack/README.md). The pack uses no online translation service.
 

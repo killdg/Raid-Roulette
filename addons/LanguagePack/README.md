@@ -1,4 +1,4 @@
-# Raid Roulette Language Pack — 1.0.0 beta
+# Raid Roulette Language Pack — 1.0.1 beta
 
 An optional, offline language add-on for **Raid Roulette 2.0.146** on **SPT 4.1.6**.
 English remains the base mod's default. Install this single pack to use the
@@ -67,6 +67,13 @@ translate known labels only while RR draws its own menus. Configuration Manager
 hooks change presentation labels and reversible enum display conversions, not
 saved setting values. Client hooks and the language listener are removed on
 plugin destruction. Unknown text remains unchanged.
+
+## 1.0.1 menu repair
+
+This patch fixes a blank F1 window caused by the add-on treating BepInEx core
+settings as plugin-owned settings. Core rows have no plugin owner and now pass
+through safely. Restart the game after updating. No base RR update is needed.
+The actual compiled hook is regression-tested with a null owner in all 17 locales.
 
 ## Validation status
 
